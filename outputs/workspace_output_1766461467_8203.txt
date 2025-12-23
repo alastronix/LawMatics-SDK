@@ -1,6 +1,0 @@
-        public async Task<CustomContactType?> UpdateCustomContactTypeAsync(int id, UpdateCustomContactTypeRequest request, CancellationToken cancellationToken = default)
-        {
-            return await PutAsync<CustomContactType>($"custom-contact-types/{id}", request, cancellationToken);
-        }
-
-        /// <summary>

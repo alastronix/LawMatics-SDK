@@ -1,2 +1,0 @@
-87:               var jsonResponse = JsonSerializer.Serialize(apiResponse, _jsonOptions);
-130:            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);

@@ -1,4 +1,0 @@
-  File "/workspace/quick_fix_remaining.py", line 51
-    'sed', '-i', f'{line_num}s/var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);/var apiResponse = new ApiResponse<PagedResponse<>> { Data = expectedResponse };\\n               var jsonResponse = JsonSerializer.Serialize(apiResponse, _jsonOptions);/', filepath
-                                                                                                                                                                                                                                                                                      ^
-SyntaxError: f-string: expecting '}'

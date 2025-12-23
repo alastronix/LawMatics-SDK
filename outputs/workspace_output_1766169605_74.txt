@@ -1,6 +1,0 @@
-            var parameters = new Dictionary<string, string>
-            {
-                ["date_from"] = dateFrom.ToString("yyyy-MM-dd"),
-                ["date_to"] = dateTo.Value.ToString("yyyy-MM-dd"),
-                ["group_by"] = groupBy
-            };

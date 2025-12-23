@@ -1,8 +1,0 @@
-/workspace/LawMatics.SDK/Clients/BaseClient.cs(115,103): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'int' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
-/workspace/LawMatics.SDK/Clients/BaseClient.cs(129,105): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'System.Exception' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
-/workspace/LawMatics.SDK/Clients/FilesClient.cs(103,91): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'System.Exception' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
-/workspace/LawMatics.SDK/Clients/FilesClient.cs(144,93): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'System.Exception' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
-/workspace/LawMatics.SDK/Clients/BaseClient.cs(115,103): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'int' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
-/workspace/LawMatics.SDK/Clients/BaseClient.cs(129,105): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'System.Exception' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
-/workspace/LawMatics.SDK/Clients/FilesClient.cs(103,91): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'System.Exception' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
-/workspace/LawMatics.SDK/Clients/FilesClient.cs(144,93): error CS1503: Argument 2: cannot convert from 'System.Net.HttpStatusCode' to 'System.Exception' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]

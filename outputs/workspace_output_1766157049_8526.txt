@@ -1,6 +1,0 @@
-            {
-                // Update credentials with new token
-                _credentials.UpdateTokens(tokenResponse.AccessToken, tokenResponse.RefreshToken, tokenResponse.ExpiresAt);
-                
-                // Update HttpClient header
-                _httpClient.DefaultRequestHeaders.Authorization = 

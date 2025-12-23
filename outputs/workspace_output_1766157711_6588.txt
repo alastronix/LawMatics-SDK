@@ -1,5 +1,0 @@
-LawMatics.SDK/Exceptions/LawMaticsApiException.cs:8:    public class LawMaticsApiException : LawMaticsException
-LawMatics.SDK/Exceptions/LawMaticsApiException.cs:16:        /// Initializes a new instance of the <see cref="LawMaticsApiException"/> class.
-LawMatics.SDK/Exceptions/LawMaticsApiException.cs:18:        public LawMaticsApiException() : base()
-LawMatics.SDK/Exceptions/LawMaticsApiException.cs:23:        /// Initializes a new instance of the <see cref="LawMaticsApiException"/> class with a specified error message.
-LawMatics.SDK/Exceptions/LawMaticsApiException.cs:26:        public LawMaticsApiException(string message) : base(message)

@@ -1,1 +1,0 @@
-126:            var response = await _client.GetAsync<ApiResponse<User>>(endpoint, cancellationToken);

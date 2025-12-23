@@ -1,2 +1,0 @@
-LawMatics.SDK/Clients/CustomEmailsClient.cs
-LawMatics.SDK/Clients/EmailAddressesClient.cs

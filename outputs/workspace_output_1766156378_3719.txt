@@ -1,4 +1,0 @@
-./LawMatics.SDK/Models/Address.cs
-./LawMatics.SDK/Models/ApiErrorResponse.cs
-./LawMatics.SDK/Models/Contact.cs
-./LawMatics.SDK/Models/OAuthTokenResponse.cs

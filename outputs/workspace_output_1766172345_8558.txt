@@ -1,2 +1,0 @@
-./LawMatics.SDK/Clients/CommentsClient.cs
-./LawMatics.SDK.Tests/CommentsClientTests.cs

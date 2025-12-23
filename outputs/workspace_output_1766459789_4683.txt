@@ -1,4 +1,0 @@
-/workspace/debug_json/Program.cs(9,7): error CS0246: The type or namespace name 'Moq' could not be found (are you missing a using directive or an assembly reference?) [/workspace/debug_json/debug_json.csproj]
-/workspace/debug_json/Program.cs(10,7): error CS0246: The type or namespace name 'Moq' could not be found (are you missing a using directive or an assembly reference?) [/workspace/debug_json/debug_json.csproj]
-
-The build failed. Fix the build errors and run again.

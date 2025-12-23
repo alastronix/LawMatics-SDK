@@ -1,5 +1,0 @@
-        public async Task VoidPaymentAsync(int id, string reason)
-        {
-            await PostAsync($"/payments/{id}/void", new { reason });
-        }
-

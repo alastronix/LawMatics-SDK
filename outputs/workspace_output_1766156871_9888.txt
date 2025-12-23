@@ -1,5 +1,0 @@
-36:            return await _client.GetAsync<ApiResponse<List<CustomForm>>>(endpoint, cancellationToken);
-51:            var response = await _client.GetAsync<ApiResponse<CustomForm>>(endpoint, cancellationToken);
-71:            var response = await _client.PostAsync<ApiResponse<CustomForm>>(endpoint, customForm, cancellationToken);
-92:            var response = await _client.PutAsync<ApiResponse<CustomForm>>(endpoint, customForm, cancellationToken);
-109:            await _client.DeleteAsync<object>(endpoint, cancellationToken);

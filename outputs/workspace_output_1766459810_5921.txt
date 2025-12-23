@@ -1,7 +1,0 @@
-39-        /// <param name="id">Comment ID</param>
-40-        /// <param name="cancellationToken">Cancellation token</param>
-41-        /// <returns>Comment details</returns>
-42:        public async Task<Comment?> GetCommentAsync(int id, CancellationToken cancellationToken = default)
-43-        {
-44-            var response = await GetAsync<Comment>($"comments/{id}", cancellationToken: cancellationToken);
-45-            return response;

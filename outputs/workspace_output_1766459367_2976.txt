@@ -1,3 +1,0 @@
-/workspace/LawMatics.SDK.Tests/AddressesClientTests.cs(246,9): error CS0106: The modifier 'public' is not valid for this item [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
-/workspace/LawMatics.SDK.Tests/AddressesClientTests.cs(270,9): error CS0106: The modifier 'public' is not valid for this item [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
-/workspace/LawMatics.SDK.Tests/AddressesClientTests.cs(275,2): error CS1513: } expected [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]

@@ -1,3 +1,0 @@
-./LawMatics.SDK/Clients/TimeEntriesClient.cs
-./LawMatics.SDK/Models/MissingModels.cs
-./LawMatics.SDK.Tests/TimeEntriesClientTests.cs

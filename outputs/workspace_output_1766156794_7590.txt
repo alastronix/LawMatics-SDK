@@ -1,5 +1,0 @@
-36:            return await _client.GetAsync<ApiResponse<List<Note>>>(endpoint, cancellationToken);
-51:            var response = await _client.GetAsync<ApiResponse<Note>>(endpoint, cancellationToken);
-71:            var response = await _client.PostAsync<ApiResponse<Note>>(endpoint, note, cancellationToken);
-92:            var response = await _client.PutAsync<ApiResponse<Note>>(endpoint, note, cancellationToken);
-109:            await _client.DeleteAsync<object>(endpoint, cancellationToken);

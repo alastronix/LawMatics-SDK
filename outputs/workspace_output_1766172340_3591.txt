@@ -1,5 +1,0 @@
-45:        public async Task GetCommentsAsync_WithValidParameters_ReturnsComments()
-102:        public async Task GetCommentAsync_WithValidId_ReturnsComment()
-146:        public async Task CreateCommentAsync_WithValidRequest_ReturnsCreatedComment()
-196:        public async Task DeleteCommentAsync_WithValidId_ReturnsTrue()
-224:        public async Task BulkDeleteCommentsAsync_WithValidIds_ReturnsTrue()

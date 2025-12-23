@@ -1,2 +1,0 @@
-./LawMatics.SDK/Models/ApiErrorResponse.cs:        public PaginationInfo? Pagination { get; set; }
-./LawMatics.SDK/Models/ApiErrorResponse.cs:    public class PaginationInfo

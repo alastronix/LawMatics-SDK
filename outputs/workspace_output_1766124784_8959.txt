@@ -1,2 +1,0 @@
-Project `LawMatics.SDK/LawMatics.SDK.csproj` added to the solution.
-Project `LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj` added to the solution.

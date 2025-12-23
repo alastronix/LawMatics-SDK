@@ -1,6 +1,0 @@
-                CreatedAt = DateTime.UtcNow
-            };
-
-            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
-            var response = new HttpResponseMessage(HttpStatusCode.OK)
-            {

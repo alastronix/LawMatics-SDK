@@ -1,8 +1,0 @@
-./LawMatics.SDK.Tests/Authentication/LawMaticsCredentialsTests.cs
-./LawMatics.SDK.Tests/Clients/ContactsClientTests.cs
-./LawMatics.SDK.Tests/Configuration/LawMaticsClientOptionsTests.cs
-./LawMatics.SDK.Tests/LawMaticsClientTests.cs
-./LawMatics.SDK.Tests/UnitTest1.cs
-./LawMatics.SDK.Tests/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs
-./LawMatics.SDK.Tests/obj/Debug/net9.0/LawMatics.SDK.Tests.AssemblyInfo.cs
-./LawMatics.SDK.Tests/obj/Debug/net9.0/LawMatics.SDK.Tests.GlobalUsings.g.cs

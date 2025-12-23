@@ -1,3 +1,0 @@
-./API-Endpoints-Analysis.md
-./README.md
-./todo.md

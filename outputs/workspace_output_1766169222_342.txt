@@ -1,1 +1,0 @@
-14:        public ContactsClient(HttpClient httpClient, LawMaticsClientOptions options, ILogger? logger = null)

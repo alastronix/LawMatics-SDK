@@ -1,6 +1,0 @@
-        public async Task<TaskItem?> UpdateTaskAsync(int id, UpdateTaskRequest request, CancellationToken cancellationToken = default)
-        {
-            return await PutAsync<TaskItem>($"tasks/{id}", request, cancellationToken);
-        }
-
-        /// <summary>

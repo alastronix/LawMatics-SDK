@@ -1,2 +1,0 @@
-100:        public LawMaticsClient(LawMaticsCredentials credentials, LawMaticsClientOptions? options = null, ILogger<LawMaticsClient>? logger = null)
-154:        public LawMaticsClient(LawMaticsCredentials credentials, HttpClient httpClient, LawMaticsClientOptions? options = null, ILogger<LawMaticsClient>? logger = null)

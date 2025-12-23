@@ -1,7 +1,0 @@
-61-        /// <param name="id">The event location ID.</param>
-62-        /// <param name="cancellationToken">Cancellation token.</param>
-63-        /// <returns>The event location details.</returns>
-64:        public async Task<EventLocation?> GetEventLocationAsync(int id, CancellationToken cancellationToken = default)
-65-        {
-66-            return await GetAsync<EventLocation>($"event-locations/{id}", cancellationToken: cancellationToken);
-67-        }

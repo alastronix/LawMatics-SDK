@@ -1,6 +1,0 @@
-        public async Task<TimeEntry?> CreateTimeEntryAsync(CreateTimeEntryRequest request, CancellationToken cancellationToken = default)
-        {
-            return await PostAsync<TimeEntry>("time-entries", request, cancellationToken);
-        }
-
-        /// <summary>

@@ -1,5 +1,0 @@
-/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs
-/workspace/LawMatics.SDK/Clients/TimeEntriesClient.cs
-/workspace/LawMatics.SDK/Clients/TasksClient.cs
-/workspace/LawMatics.SDK/Clients/EmailCampaignStatsClient.cs
-/workspace/LawMatics.SDK/Clients/MatterSubStatusesClient.cs

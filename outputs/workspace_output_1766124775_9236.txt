@@ -1,9 +1,0 @@
-The template "Class Library" was created successfully.
-
-Processing post-creation actions...
-Restoring /workspace/LawMatics.SDK/LawMatics.SDK.csproj:
-  Determining projects to restore...
-  Restored /workspace/LawMatics.SDK/LawMatics.SDK.csproj (in 62 ms).
-Restore succeeded.
-
-

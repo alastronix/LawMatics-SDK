@@ -1,5 +1,0 @@
-256:            await PostAsync($"/folders/{folderId}/permissions", new { is_public = isPublic });
-267:            await PostAsync($"/folders/{folderId}/share", new { user_ids = userIds, permissions });
-277:            await PostAsync($"/folders/{folderId}/unshare", new { user_ids = userIds });
-297:            await PostAsync("/folders/bulk-delete", new { folder_ids = folderIds });
-307:            await PostAsync("/folders/bulk-move", new { folder_ids = folderIds, parent_id = newParentId });

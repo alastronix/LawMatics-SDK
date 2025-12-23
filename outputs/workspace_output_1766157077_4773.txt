@@ -1,3 +1,0 @@
-177:            await PostAsync($"/payments/{id}/reminder", request);
-427:            await PostAsync("/payments/bulk-process", new { payment_ids = paymentIds, payment_method = paymentMethod });
-441:            await PostAsync("/payments/bulk-reminder", request);

@@ -1,1 +1,0 @@
-7:- **Complete API Coverage**: Full support for all major LawMatics API endpoints:

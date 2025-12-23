@@ -1,5 +1,0 @@
-            };
-
-            var apiResponse = new ApiResponse<PagedResponse<>> { Data = expectedResponse };
-               var jsonResponse = JsonSerializer.Serialize(apiResponse, _jsonOptions);
-            var response = new HttpResponseMessage(HttpStatusCode.OK)
