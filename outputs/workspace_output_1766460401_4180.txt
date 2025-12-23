@@ -1,0 +1,26 @@
+            var client = new CustomContactTypesClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new PagedResponse<CustomContactType>
+            {
+                Data = new List<CustomContactType>
+                {
+                    new CustomContactType
+                    {
+                        Id = 1,
+                        Name = "Client",
+                        Description = "Regular clients of the firm",
+                        CreatedAt = DateTime.UtcNow,
+                        UpdatedAt = DateTime.UtcNow
+                    }
+                },
+                Pagination = new PaginationInfo
+                {
+                    CurrentPage = 1,
+                    PerPage = 20,
+                    Total = 1,
+                    TotalPages = 1,
+                    HasNext = false
+                }
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+            var response = new HttpResponseMessage(HttpStatusCode.OK)

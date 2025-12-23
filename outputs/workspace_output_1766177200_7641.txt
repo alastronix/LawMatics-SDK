@@ -1,0 +1,41 @@
+                DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                Converters = { new System.Text.Json.Serialization.JsonStringEnumConverter() }
+            };
+        }
+
+        protected async Task<ApiResponse<T>> GetAsync<T>(string endpoint)
+        {
+            return await SendRequestAsync<T>(HttpMethod.Get, endpoint);
+        }
+
+        protected async Task<ApiResponse<T>> PostAsync<T>(string endpoint, object? data = null)
+        {
+            return await SendRequestAsync<T>(HttpMethod.Post, endpoint, data);
+        }
+
+        protected async Task<ApiResponse<T>> PutAsync<T>(string endpoint, object? data = null)
+--
+        protected async Task DeleteAsync(string endpoint)
+        {
+            await SendRequestAsync<object>(HttpMethod.Delete, endpoint);
+        }
+
+        protected async Task<T?> GetAsync<T>(string endpoint, Dictionary<string, string> parameters, CancellationToken cancellationToken = default)
+        {
+            var queryString = string.Join("&", parameters.Select(kvp => $"{Uri.EscapeDataString(kvp.Key)}={Uri.EscapeDataString(kvp.Value)}"));
+            var fullEndpoint = $"{endpoint}?{queryString}";
+            var response = await GetAsync<T>(fullEndpoint);
+            return response.Data;
+        }
+
+        protected async Task<T?> GetAsync<T>(string endpoint, CancellationToken cancellationToken = default)
+        {
+            var response = await SendRequestAsync<ApiResponse<T>>(HttpMethod.Get, endpoint);
+            return response.Data;
+        }
+
+        protected async Task<T?> PostAsync<T>(string endpoint, object data, CancellationToken cancellationToken = default)
+        {
+            var response = await SendRequestAsync<ApiResponse<T>>(HttpMethod.Post, endpoint, data);
+            return response.Data;
+        }

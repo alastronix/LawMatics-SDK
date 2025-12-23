@@ -1,0 +1,11 @@
+        public async Task<PagedResponse<Comment>> GetCommentsAsync(FilterParameters? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var queryParams = BuildQueryString(parameters ?? new FilterParameters());
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryParams}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Gets a specific comment by ID
+        /// </summary>
+        /// <param name="id">Comment ID</param>
+        /// <param name="cancellationToken">Cancellation token</param>

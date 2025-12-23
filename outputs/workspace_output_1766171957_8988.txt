@@ -1,0 +1,16 @@
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-    }
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-    /// <summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-    /// Represents filter parameters for API queries.
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-    /// </summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs:    public class FilterParameters : BaseRequestParameters
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-    {
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// <summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// Gets or sets the search term to filter results.
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// </summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        public string? Search { get; set; }
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// <summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// Gets or sets the start date for filtering results.
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// </summary>

@@ -1,0 +1,16 @@
+        {
+            var response = await SendRequestAsync<ApiResponse<T>>(HttpMethod.Post, endpoint, data);
+            return response.Data;
+        }
+
+        protected async Task<T?> PutAsync<T>(string endpoint, object data, CancellationToken cancellationToken = default)
+        {
+            var response = await PutAsync<T>(endpoint, data);
+            return response.Data;
+        }
+
+        protected async Task<bool> DeleteAsync(string endpoint, CancellationToken cancellationToken = default)
+        {
+            await SendRequestAsync<object>(HttpMethod.Delete, endpoint);
+            return true;
+        }

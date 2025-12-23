@@ -1,0 +1,6 @@
+Generated JSON:
+{"data":[{"id":1,"name":"Active Type","description":"Active custom contact type","created_at":"2025-12-23T03:04:33.3139732Z","updated_at":"2025-12-23T03:04:33.3140214Z"}],"pagination":{"current_page":1,"per_page":20,"total":1,"total_pages":1,"has_next":false,"has_prev":false}}
+
+Deserialization successful!
+Data count: 1
+First item name: Active Type

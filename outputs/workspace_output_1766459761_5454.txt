@@ -1,0 +1,51 @@
+212:    public class EventLocation
+213-    {
+214-        /// <summary>
+215-        /// Unique identifier for the event location
+216-        /// </summary>
+217-        [JsonPropertyName("id")]
+218-        public int Id { get; set; }
+219-
+220-        /// <summary>
+221-        /// Location name
+222-        /// </summary>
+223-        [JsonPropertyName("name")]
+224-        public string Name { get; set; } = string.Empty;
+225-
+226-        /// <summary>
+227-        /// Location address
+228-        /// </summary>
+229-        [JsonPropertyName("address")]
+230-        public string? Address { get; set; }
+231-
+232-        /// <summary>
+233-        /// Location capacity
+234-        /// </summary>
+235-        [JsonPropertyName("capacity")]
+236-        public int? Capacity { get; set; }
+237-
+238-        /// <summary>
+239-        /// Location description
+240-        /// </summary>
+241-        [JsonPropertyName("description")]
+242-        public string? Description { get; set; }
+243-
+244-        /// <summary>
+245-        /// Date when location was created
+246-        /// </summary>
+247-        [JsonPropertyName("created_at")]
+248-        public DateTime CreatedAt { get; set; }
+249-
+250-        /// <summary>
+251-        /// Date when location was last updated
+252-        /// </summary>
+253-        [JsonPropertyName("updated_at")]
+254-        public DateTime UpdatedAt { get; set; }
+255-    }
+256-
+257-    /// <summary>
+258-    /// Represents an event type
+259-    /// </summary>
+260-    public class EventType
+261-    {
+262-        /// <summary>

@@ -1,0 +1,21 @@
+        }
+
+        [Fact]
+        public async Task GetTaskStatusAsync_WithValidId_ReturnsTaskStatus()
+        {
+            // Arrange
+            var client = new TaskStatusesClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new Models.TaskStatus
+            {
+                Id = 1,
+                Name = "To Do",
+                Description = "Tasks that need to be started",
+                Color = "#95A5A6",
+                IsCompleted = false,
+                IsActive = true,
+                SortOrder = 1,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+            var response = new HttpResponseMessage(HttpStatusCode.OK)

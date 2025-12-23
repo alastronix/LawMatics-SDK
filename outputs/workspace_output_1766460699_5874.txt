@@ -1,0 +1,11 @@
+                IsPrimary = true,
+                CreatedAt = DateTime.UtcNow
+            ,
+                        UpdatedAt = DateTime.UtcNow};
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")
+            };
+

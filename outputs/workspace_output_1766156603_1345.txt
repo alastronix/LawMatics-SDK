@@ -1,0 +1,10 @@
+using LawMatics.SDK.Configuration;
+using LawMatics.SDK.Exceptions;
+using Microsoft.Extensions.Logging;
+using System.Text.Json;
+
+namespace LawMatics.SDK.Clients
+{
+    /// <summary>
+    /// Base client class with common functionality for all API clients
+    /// </summary>

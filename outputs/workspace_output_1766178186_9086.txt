@@ -1,0 +1,26 @@
+                .ReturnsAsync(response);
+
+            // Act
+            var result = await client.DeleteCustomContactTypeAsync(1);
+
+            // Assert
+            Assert.True(result);
+        }
+
+        [Fact]
+        public async Task GetActiveCustomContactTypesAsync_ReturnsOnlyActiveContactTypes()
+        {
+            // Arrange
+            var client = new CustomContactTypesClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new PagedResponse<CustomContactType>
+            {
+                Data = new List<CustomContactType>
+                {
+                    new CustomContactType
+                    {
+                        Id = 1,
+                        Name = "Active Type",
+                        CreatedAt = DateTime.UtcNow
+                    }
+                },
+                Pagination = new PaginationInfo

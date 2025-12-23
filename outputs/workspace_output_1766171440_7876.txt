@@ -1,0 +1,7 @@
+Test run for /workspace/LawMatics.SDK.Tests/bin/Debug/net9.0/LawMatics.SDK.Tests.dll (.NETCoreApp,Version=v9.0)
+VSTest version 17.14.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    62, Skipped:     0, Total:    62, Duration: 185 ms - LawMatics.SDK.Tests.dll (net9.0)

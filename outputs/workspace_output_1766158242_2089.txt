@@ -1,0 +1,11 @@
+
+        [Fact]
+        public void Constructor_WithNullCredentials_ThrowsArgumentNullException()
+        {
+            // Act & Assert
+            Assert.Throws<ArgumentNullException>(() => new LawMaticsClient(null!, _options, _mockLogger.Object));
+        }
+
+        [Fact]
+        public void Constructor_WithNullOptions_UsesDefaultOptions()
+        {

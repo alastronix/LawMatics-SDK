@@ -1,0 +1,10 @@
+LawMatics.SDK/Models/File.cs
+LawMatics.SDK/Models/OAuthTokenResponse.cs
+LawMatics.SDK/Models/Contact.cs
+LawMatics.SDK/Models/Company.cs
+LawMatics.SDK/Models/CustomField.cs
+LawMatics.SDK/Models/Matter.cs
+LawMatics.SDK/Models/EmailCampaign.cs
+LawMatics.SDK/Models/Event.cs
+LawMatics.SDK/Models/Payment.cs
+LawMatics.SDK/Models/Address.cs

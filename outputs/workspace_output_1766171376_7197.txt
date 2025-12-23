@@ -1,0 +1,3 @@
+./LawMatics.SDK/LawMatics.SDK.csproj
+./LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj
+./verify-api-coverage.csproj

@@ -1,0 +1,15 @@
+/workspace/LawMatics.SDK.Tests/EmailCampaignStatsClientTests.cs
+/workspace/LawMatics.SDK.Tests/TasksClientTests.cs
+/workspace/LawMatics.SDK.Tests/MatterSubStatusesClientTests.cs
+/workspace/LawMatics.SDK.Tests/EmailAddressesClientTests.cs
+/workspace/LawMatics.SDK.Tests/EventTypesClientTests.cs
+/workspace/LawMatics.SDK.Tests/TimeEntriesClientTests.cs
+/workspace/LawMatics.SDK.Tests/CommentsClientTests.cs
+/workspace/LawMatics.SDK.Tests/SubtasksClientTests.cs
+/workspace/LawMatics.SDK.Tests/CustomEmailsClientTests.cs
+/workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs
+/workspace/LawMatics.SDK.Tests/CustomContactTypesClientTests.cs
+/workspace/LawMatics.SDK.Tests/ExpensesClientTests.cs
+/workspace/LawMatics.SDK.Tests/AddressesClientTests.cs
+/workspace/LawMatics.SDK.Tests/LawMaticsClientTests.cs
+/workspace/LawMatics.SDK.Tests/EventLocationsClientTests.cs

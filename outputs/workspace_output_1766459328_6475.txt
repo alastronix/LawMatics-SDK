@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  LawMatics.SDK -> /workspace/LawMatics.SDK/bin/Debug/net8.0/LawMatics.SDK.dll
+/workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs(22,18): error CS0101: The namespace 'LawMatics.SDK.Tests' already contains a definition for 'TaskStatusesClientTests' [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs(31,16): error CS0111: Type 'TaskStatusesClientTests' already defines a member called 'TaskStatusesClientTests' with the same parameter types [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs(57,27): error CS0111: Type 'TaskStatusesClientTests' already defines a member called 'GetTaskStatusesAsync_WithValidParameters_ReturnsTaskStatuses' with the same parameter types [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs(114,27): error CS0111: Type 'TaskStatusesClientTests' already defines a member called 'GetTaskStatusAsync_WithValidId_ReturnsTaskStatus' with the same parameter types [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs(158,27): error CS0111: Type 'TaskStatusesClientTests' already defines a member called 'DeleteTaskStatusAsync_WithValidId_ReturnsTrue' with the same parameter types [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs(182,21): error CS0111: Type 'TaskStatusesClientTests' already defines a member called 'Dispose' with the same parameter types [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]

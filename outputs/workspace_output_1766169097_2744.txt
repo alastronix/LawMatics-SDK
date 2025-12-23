@@ -1,0 +1,31 @@
+        /// Gets or sets the list of email address types.
+        /// </summary>
+        [System.Text.Json.Serialization.JsonPropertyName("types")]
+        public List<string> Types { get; set; } = new();
+    }
+
+    /// <summary>
+    /// Represents email validation result.
+    /// </summary>
+    public class EmailValidationResult
+    {
+        /// <summary>
+        /// Gets or sets whether the email is valid.
+        /// </summary>
+        [System.Text.Json.Serialization.JsonPropertyName("is_valid")]
+        public bool IsValid { get; set; }
+
+        /// <summary>
+        /// Gets or sets the normalized email address.
+        /// </summary>
+        [System.Text.Json.Serialization.JsonPropertyName("normalized_email")]
+        public string NormalizedEmail { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets validation messages.
+        /// </summary>
+        [System.Text.Json.Serialization.JsonPropertyName("messages")]
+        public List<string> Messages { get; set; } = new();
+
+        /// <summary>
+        /// Gets or sets suggestions for correction.

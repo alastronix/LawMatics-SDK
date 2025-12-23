@@ -1,0 +1,33 @@
+[xUnit.net 00:00:00.77]     LawMatics.SDK.Tests.TimeEntriesClientTests.UpdateTimeEntryAsync_WithValidIdAndRequest_ReturnsUpdatedTimeEntry [FAIL]
+[xUnit.net 00:00:00.77]     LawMatics.SDK.Tests.EmailAddressesClientTests.GetEmailAddressAsync_WithValidId_ReturnsEmailAddress [FAIL]
+[xUnit.net 00:00:00.77]     LawMatics.SDK.Tests.TasksClientTests.CreateTaskAsync_WithValidRequest_ReturnsCreatedTask [FAIL]
+[xUnit.net 00:00:00.77]     LawMatics.SDK.Tests.SubtasksClientTests.GetSubtasksAsync_WithValidParameters_ReturnsSubtasks [FAIL]
+[xUnit.net 00:00:00.77]     LawMatics.SDK.Tests.EventTypesClientTests.GetEventTypesAsync_WithValidParameters_ReturnsEventTypes [FAIL]
+[xUnit.net 00:00:00.78]     LawMatics.SDK.Tests.ExpensesClientTests.GetExpensesAsync_WithValidParameters_ReturnsExpenses [FAIL]
+[xUnit.net 00:00:00.78]     LawMatics.SDK.Tests.CustomEmailsClientTests.GetCustomEmailsAsync_WithValidParameters_ReturnsCustomEmails [FAIL]
+[xUnit.net 00:00:00.78]     LawMatics.SDK.Tests.TaskStatusesClientTests.GetTaskStatusesAsync_WithValidParameters_ReturnsTaskStatuses [FAIL]
+[xUnit.net 00:00:00.78]     LawMatics.SDK.Tests.MatterSubStatusesClientTests.GetMatterSubStatusesAsync_WithValidParameters_ReturnsMatterSubStatuses [FAIL]
+[xUnit.net 00:00:00.78]     LawMatics.SDK.Tests.CustomContactTypesClientTests.GetActiveCustomContactTypesAsync_ReturnsOnlyActiveContactTypes [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.EventTypesClientTests.GetEventTypeAsync_WithValidId_ReturnsEventType [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.CustomEmailsClientTests.GetCustomEmailAsync_WithValidId_ReturnsCustomEmail [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.CustomContactTypesClientTests.CreateCustomContactTypeAsync_WithValidRequest_ReturnsCreatedCustomContactType [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.MatterSubStatusesClientTests.GetMatterSubStatusAsync_WithValidId_ReturnsMatterSubStatus [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.EventLocationsClientTests.GetEventLocationsAsync_WithValidParameters_ReturnsEventLocations [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.TaskStatusesClientTests.GetTaskStatusAsync_WithValidId_ReturnsTaskStatus [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.SubtasksClientTests.GetSubtaskAsync_WithValidId_ReturnsSubtask [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.ExpensesClientTests.GetExpenseAsync_WithValidId_ReturnsExpense [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.TimeEntriesClientTests.GetTimeEntriesAsync_WithValidParameters_ReturnsTimeEntries [FAIL]
+[xUnit.net 00:00:00.87]     LawMatics.SDK.Tests.EmailAddressesClientTests.GetEmailAddressesAsync_WithValidParameters_ReturnsEmailAddresses [FAIL]
+[xUnit.net 00:00:00.88]     LawMatics.SDK.Tests.TasksClientTests.GetTasksAsync_WithValidParameters_ReturnsTasks [FAIL]
+[xUnit.net 00:00:00.88]     LawMatics.SDK.Tests.CustomContactTypesClientTests.UpdateCustomContactTypeAsync_WithValidIdAndRequest_ReturnsUpdatedCustomContactType [FAIL]
+[xUnit.net 00:00:00.88]     LawMatics.SDK.Tests.TasksClientTests.GetTaskAsync_WithValidId_ReturnsTask [FAIL]
+[xUnit.net 00:00:00.88]     LawMatics.SDK.Tests.TimeEntriesClientTests.CreateTimeEntryAsync_WithValidRequest_ReturnsCreatedTimeEntry [FAIL]
+[xUnit.net 00:00:00.88]     LawMatics.SDK.Tests.CustomContactTypesClientTests.GetCustomContactTypesAsync_WithValidParameters_ReturnsCustomContactTypes [FAIL]
+[xUnit.net 00:00:00.96]     LawMatics.SDK.Tests.TasksClientTests.UpdateTaskAsync_WithValidIdAndRequest_ReturnsUpdatedTask [FAIL]
+Test run for /workspace/LawMatics.SDK.Tests/bin/Debug/net8.0/LawMatics.SDK.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Failed!  - Failed:    26, Passed:    83, Skipped:     0, Total:   109, Duration: 851 ms - LawMatics.SDK.Tests.dll (net8.0)

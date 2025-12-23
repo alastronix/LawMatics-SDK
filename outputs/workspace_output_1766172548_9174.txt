@@ -1,0 +1,16 @@
+
+    /// <summary>
+    /// Represents the base response structure for all LawMatics API responses.
+    /// </summary>
+    /// <typeparam name="T">The type of data contained in the response.</typeparam>
+    public class ApiResponse<T>
+    {
+        /// <summary>
+        /// Gets or sets the response data.
+        /// </summary>
+        [JsonPropertyName("data")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public T? Data { get; set; }
+
+        /// <summary>
+        /// Gets or sets pagination information, if applicable.

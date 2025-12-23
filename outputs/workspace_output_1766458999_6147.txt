@@ -1,0 +1,41 @@
+272:        public async Task GetActiveCustomContactTypesAsync_ReturnsOnlyActiveContactTypes()
+273-        {
+274-            // Arrange
+275-            var client = new CustomContactTypesClient(_httpClient, _options, _mockLogger.Object);
+276-            var expectedResponse = new PagedResponse<CustomContactType>
+277-            {
+278-                Data = new List<CustomContactType>
+279-                {
+280-                    new CustomContactType
+281-                    {
+282-                        Id = 1,
+283-                        Name = "Active Type",
+284-                        Description = "Active custom contact type",
+285-                        CreatedAt = DateTime.UtcNow,
+286-                        UpdatedAt = DateTime.UtcNow
+287-                    }
+288-                },
+289-                Pagination = new PaginationInfo
+290-                {
+291-                    CurrentPage = 1,
+292-                    PerPage = 20,
+293-                    Total = 1,
+294-                    TotalPages = 1,
+295-                    HasNext = false
+296-                }
+297-            };
+298-
+299-            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+300-            var response = new HttpResponseMessage(HttpStatusCode.OK)
+301-            {
+302-                Content = new StringContent(jsonResponse)
+303-            };
+304-
+305-            _mockHttpMessageHandler
+306-                .Protected()
+307-                .Setup<Task<HttpResponseMessage>>(
+308-                    "SendAsync",
+309-                    ItExpr.Is<HttpRequestMessage>(req => 
+310-                        req.Method == HttpMethod.Get && 
+311-                        req.RequestUri != null &&
+312-                        req.RequestUri.ToString().Contains("custom-contact-types/active")),

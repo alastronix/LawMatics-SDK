@@ -1,0 +1,15 @@
+[xUnit.net 00:00:00.26]       Stack Trace:
+[xUnit.net 00:00:00.27]         /workspace/LawMatics.SDK.Tests/EventLocationsClientTests.cs(149,0): at LawMatics.SDK.Tests.EventLocationsClientTests.GetEventLocationAsync_WithValidId_ReturnsEventLocation()
+[xUnit.net 00:00:00.27]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.27]   Finished:    LawMatics.SDK.Tests
+  Failed LawMatics.SDK.Tests.EventLocationsClientTests.GetEventLocationAsync_WithValidId_ReturnsEventLocation [138 ms]
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.EventLocationsClientTests.GetEventLocationAsync_WithValidId_ReturnsEventLocation() in /workspace/LawMatics.SDK.Tests/EventLocationsClientTests.cs:line 149
+--- End of stack trace from previous location ---
+
+Test Run Failed.
+Total tests: 1
+     Failed: 1
+ Total time: 0.9027 Seconds

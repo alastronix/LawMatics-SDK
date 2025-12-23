@@ -1,0 +1,11 @@
+            {
+                HttpStatusCode.Unauthorized => new LawMaticsAuthenticationException("Authentication failed"),
+                HttpStatusCode.NotFound => new LawMaticsNotFoundException("Resource not found"),
+                HttpStatusCode.TooManyRequests => new LawMaticsRateLimitException("Rate limit exceeded"),
+                _ => new LawMaticsApiException($"API request failed with status {response.StatusCode}", response.StatusCode)
+            };
+
+            throw exception;
+        }
+
+        protected string BuildQueryString(object parameters)

@@ -1,0 +1,65 @@
+88-            };
+89-
+90-            _mockHttpMessageHandler
+91-                .Protected()
+92-                .Setup<Task<HttpResponseMessage>>(
+93:                    "SendAsync",
+94-                    ItExpr.Is<HttpRequestMessage>(req => 
+95-                        req.Method == HttpMethod.Get && 
+96-                        req.RequestUri != null &&
+97-                        req.RequestUri.ToString().Contains("event-locations?")),
+98-                    ItExpr.IsAny<CancellationToken>())
+99-                .ReturnsAsync(response);
+100-
+101-            // Act
+102-            var result = await client.GetEventLocationsAsync();
+103-
+104-            // Assert
+105-            Assert.NotNull(result);
+106-            Assert.NotNull(result.Data);
+107-            Assert.Single(result.Data);
+108-            Assert.Equal(1, result.Data[0].Id);
+--
+132-            };
+133-
+134-            _mockHttpMessageHandler
+135-                .Protected()
+136-                .Setup<Task<HttpResponseMessage>>(
+137:                    "SendAsync",
+138-                    ItExpr.Is<HttpRequestMessage>(req => 
+139-                        req.Method == HttpMethod.Get && 
+140-                        req.RequestUri != null &&
+141-                        req.RequestUri.ToString().Contains("event-locations/1")),
+142-                    ItExpr.IsAny<CancellationToken>())
+143-                .ReturnsAsync(response);
+144-
+145-            // Act
+146-            var result = await client.GetEventLocationAsync(1);
+147-
+148-            // Assert
+149-            Assert.NotNull(result);
+150-            Assert.Equal(1, result.Id);
+151-            Assert.Equal("Main Conference Room", result.Name);
+152-            Assert.Equal(50, result.Capacity);
+--
+160-            var response = new HttpResponseMessage(HttpStatusCode.NoContent);
+161-
+162-            _mockHttpMessageHandler
+163-                .Protected()
+164-                .Setup<Task<HttpResponseMessage>>(
+165:                    "SendAsync",
+166-                    ItExpr.Is<HttpRequestMessage>(req => 
+167-                        req.Method == HttpMethod.Delete && 
+168-                        req.RequestUri != null &&
+169-                        req.RequestUri.ToString().Contains("event-locations/1")),
+170-                    ItExpr.IsAny<CancellationToken>())
+171-                .ReturnsAsync(response);
+172-
+173-            // Act
+174-            var result = await client.DeleteEventLocationAsync(1);
+175-
+176-            // Assert
+177-            Assert.True(result);
+178-        }
+179-
+180-        public void Dispose()

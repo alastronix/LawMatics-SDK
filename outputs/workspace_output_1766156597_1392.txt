@@ -1,0 +1,20 @@
+using LawMatics.SDK.Authentication;
+using LawMatics.SDK.Clients;
+using LawMatics.SDK.Configuration;
+using LawMatics.SDK.Exceptions;
+using Microsoft.Extensions.Logging;
+
+namespace LawMatics.SDK
+{
+    /// <summary>
+    /// Main client for interacting with the Lawmatics API
+    /// </summary>
+    public class LawMaticsClient : IDisposable
+    {
+        private readonly HttpClient _httpClient;
+        private readonly LawMaticsClientOptions _options;
+        private readonly ILogger? _logger;
+        private readonly LawMaticsCredentials _credentials;
+        private bool _disposed = false;
+
+        /// <summary>

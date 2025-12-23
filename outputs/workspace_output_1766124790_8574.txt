@@ -1,0 +1,171 @@
+  Determining projects to restore...
+  Writing /tmp/tmpK9BAUN.tmp
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'System.Text.Json' into project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/index.json 283ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/page/1.0.0/5.0.0-rc.1.20451.14.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/page/1.0.0/5.0.0-rc.1.20451.14.json 74ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/page/5.0.0-rc.2.20475.5/9.0.0-preview.7.24405.7.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/page/5.0.0-rc.2.20475.5/9.0.0-preview.7.24405.7.json 71ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/page/9.0.0-rc.1.24431.7/10.0.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/page/9.0.0-rc.1.24431.7/10.0.1.json 67ms
+info : Restoring packages for /workspace/LawMatics.SDK/LawMatics.SDK.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.json/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.json/index.json 102ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.json/10.0.1/system.text.json.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.json/10.0.1/system.text.json.10.0.1.nupkg 42ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json 68ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/10.0.1/system.io.pipelines.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/10.0.1/system.io.pipelines.10.0.1.nupkg 12ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/index.json 102ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/10.0.1/system.text.encodings.web.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/10.0.1/system.text.encodings.web.10.0.1.nupkg 15ms
+info : Installed System.IO.Pipelines 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/system.io.pipelines/10.0.1 with content hash 26LbFXHKd7PmRnWlkjnYgmjd5B6HYVG+1MpTO25BdxTJnx6D0O16JPAC/S4YBqjtt4YpfGj1QO/Ss6SPMGEGQw==.
+info : Installed System.Text.Encodings.Web 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/system.text.encodings.web/10.0.1 with content hash cVAka0o1rJJ5/De0pjNs7jcaZk5hUGf1HGzUyVmE2MEB1Vf0h/8qsWxImk1zjitCbeD2Avaq2P2+usdvqgbeVQ==.
+info : Installed System.Text.Json 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/system.text.json/10.0.1 with content hash EsgwDgU1PFqhrFA9l5n+RBu76wFhNGCEwu8ITrBNhjPP3MxLyklroU5GIF8o6JYpYg6T4KD/VICfMdgPAvNp5g==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/2025.12.19.05.27.28/vulnerability.update.json
+info : Package 'System.Text.Json' is compatible with all the specified frameworks in project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info : PackageReference for package 'System.Text.Json' version '10.0.1' added to file '/workspace/LawMatics.SDK/LawMatics.SDK.csproj'.
+info : Generating MSBuild file /workspace/LawMatics.SDK/obj/LawMatics.SDK.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: /workspace/LawMatics.SDK/obj/project.assets.json
+log  : Restored /workspace/LawMatics.SDK/LawMatics.SDK.csproj (in 740 ms).
+  Determining projects to restore...
+  Writing /tmp/tmp06n3l9.tmp
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'Microsoft.Extensions.Http' into project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/index.json 222ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/page/2.1.0-preview1-final/5.0.0-preview.5.20278.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/page/2.1.0-preview1-final/5.0.0-preview.5.20278.1.json 68ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/page/5.0.0-preview.6.20305.6/10.0.0-preview.3.25171.5.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/page/5.0.0-preview.6.20305.6/10.0.0-preview.3.25171.5.json 67ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/page/10.0.0-preview.4.25258.110/10.0.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.http/page/10.0.0-preview.4.25258.110/10.0.1.json 66ms
+info : Restoring packages for /workspace/LawMatics.SDK/LawMatics.SDK.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/index.json 125ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/10.0.1/microsoft.extensions.http.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/10.0.1/microsoft.extensions.http.10.0.1.nupkg 22ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json 88ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/10.0.1/microsoft.extensions.configuration.abstractions.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/10.0.1/microsoft.extensions.configuration.abstractions.10.0.1.nupkg 12ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json 102ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/10.0.1/microsoft.extensions.options.10.0.1.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json 114ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.1/microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/index.json 125ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/10.0.1/microsoft.extensions.diagnostics.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.1/microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg 13ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/index.json 138ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/10.0.1/microsoft.extensions.diagnostics.10.0.1.nupkg 13ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/10.0.1/microsoft.extensions.logging.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/10.0.1/microsoft.extensions.logging.10.0.1.nupkg 15ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json 176ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.1/microsoft.extensions.logging.abstractions.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/10.0.1/microsoft.extensions.options.10.0.1.nupkg 77ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json 76ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.1/microsoft.extensions.primitives.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.1/microsoft.extensions.logging.abstractions.10.0.1.nupkg 20ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.1/microsoft.extensions.primitives.10.0.1.nupkg 39ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/index.json 68ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/10.0.1/microsoft.extensions.options.configurationextensions.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/10.0.1/microsoft.extensions.options.configurationextensions.10.0.1.nupkg 12ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/index.json 96ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/10.0.1/microsoft.extensions.diagnostics.abstractions.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json 70ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/10.0.1/system.diagnostics.diagnosticsource.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/index.json 144ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/10.0.1/microsoft.extensions.diagnostics.abstractions.10.0.1.nupkg 47ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/10.0.1/microsoft.extensions.configuration.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/10.0.1/system.diagnostics.diagnosticsource.10.0.1.nupkg 13ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/10.0.1/microsoft.extensions.configuration.10.0.1.nupkg 43ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json 176ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/10.0.1/microsoft.extensions.dependencyinjection.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/10.0.1/microsoft.extensions.dependencyinjection.10.0.1.nupkg 34ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/index.json 115ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/10.0.1/microsoft.extensions.configuration.binder.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/10.0.1/microsoft.extensions.configuration.binder.10.0.1.nupkg 15ms
+info : Installed Microsoft.Extensions.Configuration.Binder 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.configuration.binder/10.0.1 with content hash Lp4CZIuTVXtlvkAnTq6QvMSW7+H62gX2cU2vdFxHQUxvrWTpi7LwYI3X+YAyIS0r12/p7gaosco7efIxL4yFNw==.
+info : Installed Microsoft.Extensions.Diagnostics 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.diagnostics/10.0.1 with content hash YaocqxscJLxLit0F5yq2XyB+9C7rSRfeTL7MJIl7XwaOoUO3i0EqfO2kmtjiRduYWw7yjcSINEApYZbzjau2gQ==.
+info : Installed Microsoft.Extensions.Configuration.Abstractions 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.1 with content hash kPlU11hql+L9RjrN2N9/0GcRcRcZrNFlLLjadasFWeBORT6pL6OE+RYRk90GGCyVGSxTK+e1/f3dsMj5zpFFiQ==.
+info : Installed Microsoft.Extensions.Logging.Abstractions 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.1 with content hash YkmyiPIWAXVb+lPIrM0LE5bbtLOJkCiRTFiHpkVOvhI7uTvCfoOHLEN0LcsY56GpSD7NqX3gJNpsaDe87/B3zg==.
+info : Installed Microsoft.Extensions.DependencyInjection 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.1 with content hash zerXV0GAR9LCSXoSIApbWn+Dq1/T+6vbXMHGduq1LoVQRHT0BXsGQEau0jeLUBUcsoF/NaUT8ADPu8b+eNcIyg==.
+info : Installed Microsoft.Extensions.Primitives 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.primitives/10.0.1 with content hash DO8XrJkp5x4PddDuc/CH37yDBCs9BYN6ijlKyR3vMb55BP1Vwh90vOX8bNfnKxr5B2qEI3D8bvbY1fFbDveDHQ==.
+info : Installed Microsoft.Extensions.Configuration 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.configuration/10.0.1 with content hash njoRekyMIK+smav8B6KL2YgIfUtlsRNuT7wvurpLW+m/hoRKVnoELk2YxnUnWRGScCd1rukLMxShwLqEOKowDg==.
+info : Installed Microsoft.Extensions.Http 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.http/10.0.1 with content hash ZXJup9ReE1Ot3M8jqcw1b/lnc8USxyYS3cyLsssU39u04TES9JNGviWUGIvP3K7mMU3TF7kQl2aS0SmVwegflw==.
+info : Installed Microsoft.Extensions.Logging 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.logging/10.0.1 with content hash 9ItMpMLFZFJFqCuHLLbR3LiA4ahA8dMtYuXpXl2YamSDWZhYS9BruPprkftY0tYi2bQ0slNrixdFm+4kpz1g5w==.
+info : Installed System.Diagnostics.DiagnosticSource 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/system.diagnostics.diagnosticsource/10.0.1 with content hash wVYO4/71Pk177uQ3TG8ZQFS3Pnmr98cF9pYxnpuIb/bMnbEWsdZZoLU/euv29mfSi2/Iuypj0TRUchPk7aqBGg==.
+info : Installed Microsoft.Extensions.DependencyInjection.Abstractions 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.1 with content hash oIy8fQxxbUsSrrOvgBqlVgOeCtDmrcynnTG+FQufcUWBrwyPfwlUkCDB2vaiBeYPyT+20u9/HeuHeBf+H4F/8g==.
+info : Installed Microsoft.Extensions.Options 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.options/10.0.1 with content hash G6VVwywpJI4XIobetGHwg7wDOYC2L2XBYdtskxLaKF/Ynb5QBwLl7Q//wxAR2aVCLkMpoQrjSP9VoORkyddsNQ==.
+info : Installed Microsoft.Extensions.Options.ConfigurationExtensions 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.options.configurationextensions/10.0.1 with content hash pL78/Im7O3WmxHzlKUsWTYchKL881udU7E26gCD3T0+/tPhWVfjPwMzfN/MRKU7aoFYcOiqcG2k1QTlH5woWow==.
+info : Installed Microsoft.Extensions.Diagnostics.Abstractions 10.0.1 from https://api.nuget.org/v3/index.json to /root/.nuget/packages/microsoft.extensions.diagnostics.abstractions/10.0.1 with content hash QMoMrkNpnQym5mpfdxfxpRDuqLpsOuztguFvzH9p+Ex+do+uLFoi7UkAsBO4e9/tNR3eMFraFf2fOAi2cp3jjA==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/2025.12.19.05.27.28/vulnerability.update.json
+info : Package 'Microsoft.Extensions.Http' is compatible with all the specified frameworks in project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info : PackageReference for package 'Microsoft.Extensions.Http' version '10.0.1' added to file '/workspace/LawMatics.SDK/LawMatics.SDK.csproj'.
+info : Generating MSBuild file /workspace/LawMatics.SDK/obj/LawMatics.SDK.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: /workspace/LawMatics.SDK/obj/project.assets.json
+log  : Restored /workspace/LawMatics.SDK/LawMatics.SDK.csproj (in 1.18 sec).
+  Determining projects to restore...
+  Writing /tmp/tmpXkS9p2.tmp
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'Microsoft.Extensions.Logging.Abstractions' into project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/index.json 223ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/page/1.0.0-rc1-final/3.1.23.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/page/1.0.0-rc1-final/3.1.23.json 72ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/page/3.1.24/9.0.0-preview.4.24266.19.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/page/3.1.24/9.0.0-preview.4.24266.19.json 70ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/page/9.0.0-preview.5.24306.7/10.0.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/page/9.0.0-preview.5.24306.7/10.0.1.json 72ms
+info : Restoring packages for /workspace/LawMatics.SDK/LawMatics.SDK.csproj...
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/2025.12.19.05.27.28/vulnerability.update.json
+info : Package 'Microsoft.Extensions.Logging.Abstractions' is compatible with all the specified frameworks in project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info : PackageReference for package 'Microsoft.Extensions.Logging.Abstractions' version '10.0.1' added to file '/workspace/LawMatics.SDK/LawMatics.SDK.csproj'.
+info : Writing assets file to disk. Path: /workspace/LawMatics.SDK/obj/project.assets.json
+log  : Restored /workspace/LawMatics.SDK/LawMatics.SDK.csproj (in 153 ms).
+  Determining projects to restore...
+  Writing /tmp/tmp8CS73l.tmp
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'Microsoft.Extensions.DependencyInjection.Abstractions' into project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/index.json 238ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/page/1.0.0-rc1-final/3.1.26.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/page/1.0.0-rc1-final/3.1.26.json 67ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/page/3.1.27/9.0.3.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/page/3.1.27/9.0.3.json 71ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/page/9.0.4/10.0.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencyinjection.abstractions/page/9.0.4/10.0.1.json 69ms
+info : Restoring packages for /workspace/LawMatics.SDK/LawMatics.SDK.csproj...
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2025.12.10.23.26.49/2025.12.19.05.27.28/vulnerability.update.json
+info : Package 'Microsoft.Extensions.DependencyInjection.Abstractions' is compatible with all the specified frameworks in project 'LawMatics.SDK/LawMatics.SDK.csproj'.
+info : PackageReference for package 'Microsoft.Extensions.DependencyInjection.Abstractions' version '10.0.1' added to file '/workspace/LawMatics.SDK/LawMatics.SDK.csproj'.
+info : Writing assets file to disk. Path: /workspace/LawMatics.SDK/obj/project.assets.json
+log  : Restored /workspace/LawMatics.SDK/LawMatics.SDK.csproj (in 156 ms).

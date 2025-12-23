@@ -1,0 +1,16 @@
+752:    public class TaskStatus
+753-    {
+754-        /// <summary>
+755-        /// Gets or sets the task status ID.
+756-        /// </summary>
+757-        [JsonPropertyName("id")]
+758-        public int Id { get; set; }
+759-
+760-        /// <summary>
+761-        /// Gets or sets the task status name.
+762-        /// </summary>
+763-        [JsonPropertyName("name")]
+764-        public string Name { get; set; } = string.Empty;
+765-
+766-        /// <summary>
+767-        /// Gets or sets the task status description.

@@ -1,0 +1,11 @@
+
+        /// <summary>
+        /// Gets the company finder client
+        /// </summary>
+        public CompanyFinderClient CompanyFinder { get; }
+
+        /// <summary>
+        /// Gets the current credentials
+        /// </summary>
+        public LawMaticsCredentials Credentials => _credentials;
+

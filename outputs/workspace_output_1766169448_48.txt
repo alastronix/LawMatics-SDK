@@ -1,0 +1,11 @@
+        {
+            return await SendRequestAsync<T>(HttpMethod.Put, endpoint, data);
+        }
+
+        protected async Task DeleteAsync(string endpoint)
+        {
+            await SendRequestAsync<object>(HttpMethod.Delete, endpoint);
+        }
+
+        protected async Task<ApiResponse<T>> SendRequestAsync<T>(HttpMethod method, string endpoint, object? data = null)
+        {

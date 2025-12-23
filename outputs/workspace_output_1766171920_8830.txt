@@ -1,0 +1,5 @@
+220:        public async Task<ApiResponse<List<object>>> GetContactActivitiesAsync(int contactId, FilterParameters? parameters = null)
+222:            var queryParams = BuildQueryString(parameters ?? new FilterParameters());
+253:        public async Task<ApiResponse<List<LawMaticsFile>>> GetContactFilesAsync(int contactId, FilterParameters? parameters = null)
+255:            var queryParams = BuildQueryString(parameters ?? new FilterParameters());
+266:        public async Task<ApiResponse<List<Matter>>> GetContactMattersAsync(int contactId, FilterParameters? parameters = null)

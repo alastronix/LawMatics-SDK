@@ -1,0 +1,21 @@
+[xUnit.net 00:00:00.27]     LawMatics.SDK.Tests.TasksClientTests.CreateTaskAsync_WithValidRequest_ReturnsCreatedTask [FAIL]
+[xUnit.net 00:00:00.27]       Assert.NotNull() Failure: Value is null
+[xUnit.net 00:00:00.27]       Stack Trace:
+[xUnit.net 00:00:00.27]         /workspace/LawMatics.SDK.Tests/TasksClientTests.cs(218,0): at LawMatics.SDK.Tests.TasksClientTests.CreateTaskAsync_WithValidRequest_ReturnsCreatedTask()
+[xUnit.net 00:00:00.27]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.28]   Finished:    LawMatics.SDK.Tests
+--
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.TasksClientTests.CreateTaskAsync_WithValidRequest_ReturnsCreatedTask() in /workspace/LawMatics.SDK.Tests/TasksClientTests.cs:line 218
+--- End of stack trace from previous location ---
+
+--
+     1>Done Building Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (VSTest target(s)) -- FAILED.
+
+Build FAILED.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.90

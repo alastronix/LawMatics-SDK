@@ -1,0 +1,4 @@
+LawMatics.SDK.Tests/Authentication/LawMaticsCredentialsTests.cs
+LawMatics.SDK.Tests/CommentsClientTests.cs
+LawMatics.SDK.Tests/Configuration/LawMaticsClientOptionsTests.cs
+LawMatics.SDK.Tests/LawMaticsClientTests.cs

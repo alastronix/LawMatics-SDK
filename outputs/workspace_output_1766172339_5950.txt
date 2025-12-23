@@ -1,0 +1,20 @@
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>())
+                .ReturnsAsync(httpResponse);
+
+            var client = new CommentsClient(_httpClient, _options, _mockLogger.Object);
+
+            // Act
+            var result = await client.BulkDeleteCommentsAsync(commentIds);
+
+            // Assert
+            Assert.NotNull(result);
+        }
+
+        public void Dispose()
+        {
+            _httpClient?.Dispose();
+        }
+    }
+}

@@ -1,0 +1,11 @@
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                throw new LawMaticsApiException($"Failed to upload file: {errorContent}", response.StatusCode);
+            }
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var result = System.Text.Json.JsonSerializer.Deserialize<ApiResponse<LawMaticsFile>>(responseContent, _jsonOptions);
+            return result?.Data ?? throw new LawMaticsException("Failed to parse upload response");
+        }
+

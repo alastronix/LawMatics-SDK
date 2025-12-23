@@ -1,0 +1,16 @@
+        [Fact]
+        public async Task GetEmailAddressAsync_WithValidId_ReturnsEmailAddress()
+        {
+            // Arrange
+            var client = new EmailAddressesClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new EmailAddress
+            {
+                Id = 1,
+                Email = "john.doe@example.com",
+                Type = "work",
+                IsPrimary = true,
+                CreatedAt = DateTime.UtcNow
+            ,
+                        UpdatedAt = DateTime.UtcNow};
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);

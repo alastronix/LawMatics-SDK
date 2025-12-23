@@ -1,0 +1,11 @@
+        public async Task<EmailAddress?> GetEmailAddressAsync(int id, CancellationToken cancellationToken = default)
+        {
+            return await GetAsync<EmailAddress>($"email-addresses/{id}", cancellationToken: cancellationToken);
+        }
+
+        /// <summary>
+        /// Creates a new email address.
+        /// </summary>
+        /// <param name="request">The email address creation request.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>The created email address.</returns>

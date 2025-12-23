@@ -1,0 +1,1 @@
+./LawMatics.SDK/Models/ApiErrorResponse.cs

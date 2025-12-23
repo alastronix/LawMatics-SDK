@@ -1,0 +1,16 @@
+        public async Task CreateCommentAsync_WithValidRequest_ReturnsCreatedComment()
+        {
+            // Arrange
+            var request = new CreateCommentRequest
+            {
+                EntityType = "matter",
+                EntityId = 456,
+                Comment = "New test comment",
+                IsInternal = true
+            };
+
+            var expectedComment = new Comment
+            {
+                Id = 2,
+                EntityType = request.EntityType,
+                EntityId = request.EntityId,

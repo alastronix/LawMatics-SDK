@@ -1,0 +1,2 @@
+/workspace/LawMatics.SDK/Clients/EventLocationsClient.cs
+/workspace/LawMatics.SDK/Models/AdditionalModels.cs

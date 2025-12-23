@@ -1,0 +1,11 @@
+        /// Send payment reminder
+        /// </summary>
+        /// <param name="id">Payment ID</param>
+        /// <param name="message">Optional custom reminder message</param>
+        public async Task SendPaymentReminderAsync(int id, string? message = null)
+        {
+            var request = string.IsNullOrEmpty(message) ? new { } : new { message };
+            await PostAsync<object>($"/payments/{id}/reminder", request);
+        }
+
+        /// <summary>

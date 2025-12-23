@@ -1,0 +1,100 @@
+         
+       Done executing task "VSTestLogsTask".
+       Task "Message"
+         Done Building project /workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj for TargetFramework=net8.0
+       Done executing task "Message".
+   1:7>Done building target "BuildProject" in project "LawMatics.SDK.Tests.csproj".
+       Done executing task "CallTarget".
+       Task "CallTarget"
+   1:7>Target "ShowCallOfVSTestTaskWithParameter" in file "/usr/share/dotnet/sdk/8.0.416/Microsoft.TestPlatform.targets" from project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (target "_VSTestConsole" depends on it):
+       Task "Message"
+         Calling task Microsoft.TestPlatform.Build.Tasks.VSTestTask with following parameter...
+       Done executing task "Message".
+       Task "Message"
+         TestFileFullPath = /workspace/LawMatics.SDK.Tests/bin/Debug/net8.0/LawMatics.SDK.Tests.dll
+       Done executing task "Message".
+       Task "Message"
+         VSTestSetting = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestTestAdapterPath = ;/root/.nuget/packages/coverlet.collector/6.0.2/build/netstandard2.0/
+       Done executing task "Message".
+       Task "Message"
+         VSTestFramework = .NETCoreApp,Version=v8.0
+       Done executing task "Message".
+       Task "Message"
+         VSTestPlatform = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestTestCaseFilter = FullyQualifiedName~CommentsClientTests
+       Done executing task "Message".
+       Task "Message"
+         VSTestLogger = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestListTests = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestDiag = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestCLIRunSettings = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestResultsDirectory = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestConsolePath = /usr/share/dotnet/sdk/8.0.416/vstest.console.dll
+       Done executing task "Message".
+       Task "Message"
+         VSTestVerbosity = detailed
+       Done executing task "Message".
+       Task "Message"
+         VSTestCollect = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestBlame = 
+       Done executing task "Message".
+       Task "Message"
+         VSTestTraceDataCollectorDirectoryPath = /root/.nuget/packages/microsoft.codecoverage/17.12.0/build/netstandard2.0/
+       Done executing task "Message".
+       Task "Message"
+         VSTestNoLogo = 
+       Done executing task "Message".
+   1:7>Done building target "ShowCallOfVSTestTaskWithParameter" in project "LawMatics.SDK.Tests.csproj".
+       Done executing task "CallTarget".
+       Using "VSTestTask" task from assembly "/usr/share/dotnet/sdk/8.0.416/Microsoft.TestPlatform.Build.dll".
+       Task "VSTestTask"
+Test run for /workspace/LawMatics.SDK.Tests/bin/Debug/net8.0/LawMatics.SDK.Tests.dll (.NETCoreApp,Version=v8.0)
+         Assembly loaded during TaskRun (Microsoft.TestPlatform.Build.Tasks.VSTestTask): System.IO.Pipes, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.22/System.IO.Pipes.dll, MVID: 2a550ba6-bbd5-44df-9ef2-0a3a66315cc0, AssemblyLoadContext: Default)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.22)
+[xUnit.net 00:00:00.05]   Discovering: LawMatics.SDK.Tests
+[xUnit.net 00:00:00.09]   Discovered:  LawMatics.SDK.Tests
+[xUnit.net 00:00:00.09]   Starting:    LawMatics.SDK.Tests
+[xUnit.net 00:00:00.31]   Finished:    LawMatics.SDK.Tests
+  Passed LawMatics.SDK.Tests.CommentsClientTests.GetCommentAsync_WithValidId_ReturnsComment [155 ms]
+  Passed LawMatics.SDK.Tests.CommentsClientTests.BulkDeleteCommentsAsync_WithValidIds_ReturnsTrue [14 ms]
+  Passed LawMatics.SDK.Tests.CommentsClientTests.DeleteCommentAsync_WithValidId_ReturnsTrue [3 ms]
+  Passed LawMatics.SDK.Tests.CommentsClientTests.GetCommentsAsync_WithValidParameters_ReturnsComments [8 ms]
+  Passed LawMatics.SDK.Tests.CommentsClientTests.CreateCommentAsync_WithValidRequest_ReturnsCreatedComment [3 ms]
+
+Test Run Successful.
+Total tests: 5
+     Passed: 5
+ Total time: 0.7277 Seconds
+       Done executing task "VSTestTask".
+   1:7>Done building target "_VSTestConsole" in project "LawMatics.SDK.Tests.csproj".
+       Done executing task "CallTarget".
+       Task "CallTarget" skipped, due to false condition; ($(VsTestUseMSBuildOutput)) was evaluated as (False).
+   1:7>Done building target "VSTest" in project "LawMatics.SDK.Tests.csproj".
+   1:7>Done Building Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (VSTest target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.84

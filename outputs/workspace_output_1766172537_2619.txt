@@ -1,0 +1,31 @@
+    public class Comment
+    {
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        [JsonPropertyName("entity_type")]
+        public string EntityType { get; set; } = string.Empty;
+
+        [JsonPropertyName("entity_id")]
+        public int EntityId { get; set; }
+
+        [JsonPropertyName("comment")]
+        public string Content { get; set; } = string.Empty;
+
+        [JsonPropertyName("created_by_id")]
+        public int? CreatedById { get; set; }
+
+        [JsonPropertyName("created_by_name")]
+        public string? CreatedByName { get; set; }
+
+        [JsonPropertyName("created_at")]
+        public DateTime? CreatedAt { get; set; }
+
+        [JsonPropertyName("updated_at")]
+        public DateTime? UpdatedAt { get; set; }
+
+        [JsonPropertyName("is_internal")]
+        public bool IsInternal { get; set; }
+
+        [JsonPropertyName("is_deleted")]
+        public bool IsDeleted { get; set; }

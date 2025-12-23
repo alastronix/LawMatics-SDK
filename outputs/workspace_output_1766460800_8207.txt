@@ -1,0 +1,18 @@
+
+        [Fact]
+        public async Task GetExpenseAsync_WithValidId_ReturnsExpense()
+        {
+            // Arrange
+            var client = new ExpensesClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new Expense
+            {
+                Id = 1,
+                Description = "Court Filing Fee",
+                Amount = 250.00m,
+                Date = DateTime.UtcNow.AddDays(-1),
+                Category = "Filing Fees",
+                MatterId = 1,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);

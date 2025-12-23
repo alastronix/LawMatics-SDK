@@ -1,0 +1,31 @@
+        public async Task GetCommentsAsync_WithValidParameters_ReturnsComments()
+        {
+            // Arrange
+            var expectedComments = new List<Comment>
+            {
+                new Comment
+                {
+                    Id = 1,
+                    EntityType = "contact",
+                    EntityId = 123,
+                    Content = "Test comment 1",
+                    CreatedById = 456,
+                    CreatedByName = "Test User",
+                    CreatedAt = DateTime.UtcNow,
+                    IsInternal = false,
+                    IsDeleted = false
+                }
+            };
+
+            var pagedResponse = new PagedResponse<Comment>
+            {
+                Data = expectedComments,
+                Pagination = new PaginationInfo
+                {
+                    CurrentPage = 1,
+                    PerPage = 25,
+                    Total = 1
+                }
+            };
+
+            var responseJson = JsonSerializer.Serialize(pagedResponse);

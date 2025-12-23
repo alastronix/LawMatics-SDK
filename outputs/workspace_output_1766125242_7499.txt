@@ -1,0 +1,93 @@
+.
+├── LawMatics.SDK
+│   ├── Authentication
+│   │   └── LawMaticsCredentials.cs
+│   ├── Clients
+│   │   ├── CompaniesClient.cs
+│   │   ├── ContactsClient.cs
+│   │   ├── CustomFieldsClient.cs
+│   │   ├── CustomFormsClient.cs
+│   │   ├── EmailCampaignsClient.cs
+│   │   ├── EventsClient.cs
+│   │   ├── FilesClient.cs
+│   │   ├── FoldersClient.cs
+│   │   ├── MattersClient.cs
+│   │   ├── NotesClient.cs
+│   │   ├── PaymentsClient.cs
+│   │   └── UsersClient.cs
+│   ├── Configuration
+│   │   └── LawMaticsClientOptions.cs
+│   ├── Exceptions
+│   │   ├── LawMaticsApiException.cs
+│   │   └── LawMaticsException.cs
+│   ├── Models
+│   │   ├── Address.cs
+│   │   ├── ApiErrorResponse.cs
+│   │   ├── Contact.cs
+│   │   └── OAuthTokenResponse.cs
+│   ├── Class1.cs
+│   ├── LawMatics.SDK.csproj
+│   └── LawMaticsClient.cs
+├── LawMatics.SDK.Tests
+│   ├── Authentication
+│   │   └── LawMaticsCredentialsTests.cs
+│   ├── Clients
+│   │   └── ContactsClientTests.cs
+│   ├── Configuration
+│   │   └── LawMaticsClientOptionsTests.cs
+│   ├── LawMatics.SDK.Tests.csproj
+│   ├── LawMaticsClientTests.cs
+│   └── UnitTest1.cs
+├── outputs
+│   ├── workspace_output_1766124680_3128.txt
+│   ├── workspace_output_1766124682_5341.txt
+│   ├── workspace_output_1766124711_9602.txt
+│   ├── workspace_output_1766124713_5310.txt
+│   ├── workspace_output_1766124775_9236.txt
+│   ├── workspace_output_1766124778_744.txt
+│   ├── workspace_output_1766124784_8959.txt
+│   ├── workspace_output_1766124787_663.txt
+│   ├── workspace_output_1766124790_8574.txt
+│   ├── workspace_output_1766124801_2221.txt
+│   ├── workspace_output_1766124807_9346.txt
+│   ├── workspace_output_1766125025_8798.txt
+│   ├── workspace_output_1766125036_2729.txt
+│   ├── workspace_output_1766125064_7913.txt
+│   ├── workspace_output_1766125111_5039.txt
+│   ├── workspace_output_1766125133_6616.txt
+│   ├── workspace_output_1766125169_4678.txt
+│   ├── workspace_output_1766125174_3177.txt
+│   ├── workspace_output_1766125186_4353.txt
+│   ├── workspace_output_1766125189_4714.txt
+│   ├── workspace_output_1766125191_6396.txt
+│   ├── workspace_output_1766125193_3197.txt
+│   ├── workspace_output_1766125209_3624.txt
+│   ├── workspace_output_1766125213_9740.txt
+│   ├── workspace_output_1766125230_3864.txt
+│   ├── workspace_output_1766125234_1643.txt
+│   ├── workspace_output_1766125239_2079.txt
+│   └── workspace_output_1766125242_7499.txt
+├── summarized_conversations
+│   ├── original_conversation_1766125090_643.txt
+│   ├── original_conversation_1766125091_3369.txt
+│   ├── original_conversation_1766125091_4644.txt
+│   ├── original_conversation_1766125093_2607.txt
+│   ├── original_conversation_1766125093_6425.txt
+│   ├── original_conversation_1766125093_8858.txt
+│   ├── original_conversation_1766125093_9866.txt
+│   ├── original_conversation_1766125094_1019.txt
+│   ├── original_conversation_1766125094_4525.txt
+│   ├── original_conversation_1766125094_9194.txt
+│   ├── original_conversation_1766125095_6812.txt
+│   ├── original_conversation_1766125095_7081.txt
+│   ├── original_conversation_1766125095_7990.txt
+│   ├── original_conversation_1766125097_9519.txt
+│   ├── original_conversation_1766125098_1195.txt
+│   ├── original_conversation_1766125098_3910.txt
+│   ├── original_conversation_1766125098_9093.txt
+│   └── original_conversation_1766125099_1.txt
+├── LawMatics.SDK.sln
+├── README.md
+└── todo.md
+
+13 directories, 78 files

@@ -1,0 +1,3 @@
+347:        private async Task<T> SendRequestAsync<T>(HttpMethod method, string endpoint, object? content, CancellationToken cancellationToken)
+403:        private async Task HandleErrorResponseAsync(HttpResponseMessage response)
+460:        private async Task<OAuthTokenResponse> RefreshTokenInternalAsync(CancellationToken cancellationToken)

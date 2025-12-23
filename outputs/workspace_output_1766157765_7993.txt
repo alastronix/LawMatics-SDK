@@ -1,0 +1,10 @@
+./LawMatics.SDK/obj/Debug/net9.0/ref/LawMatics.SDK.dll
+./LawMatics.SDK/obj/Debug/net9.0/refint/LawMatics.SDK.dll
+./LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.dll
+./LawMatics.SDK/obj/Release/net9.0/ref/LawMatics.SDK.dll
+./LawMatics.SDK/obj/Release/net9.0/refint/LawMatics.SDK.dll
+./LawMatics.SDK/obj/Release/net9.0/LawMatics.SDK.dll
+./LawMatics.SDK/bin/Debug/net9.0/LawMatics.SDK.dll
+./LawMatics.SDK/bin/Release/net9.0/LawMatics.SDK.dll
+./LawMatics.SDK/bin/Release/LawMatics.SDK.1.0.0.nupkg
+./LawMatics.SDK.Tests/obj/Debug/net9.0/ref/LawMatics.SDK.Tests.dll

@@ -1,0 +1,31 @@
+        public async Task CreateCommentAsync_WithValidRequest_ReturnsCreatedComment()
+        {
+            // Arrange
+            var request = new CreateCommentRequest
+            {
+                EntityType = "matter",
+                EntityId = 456,
+                Comment = "New test comment",
+                IsInternal = true
+            };
+
+            var expectedComment = new Comment
+            {
+                Id = 2,
+                EntityType = request.EntityType,
+                EntityId = request.EntityId,
+                Content = request.Comment,
+                IsInternal = request.IsInternal,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            var apiResponse = new ApiResponse<Comment> { Data = expectedComment };
+            var responseJson = JsonSerializer.Serialize(apiResponse);
+            var httpResponse = new HttpResponseMessage(HttpStatusCode.Created)
+            {
+                Content = new StringContent(responseJson, System.Text.Encoding.UTF8, "application/json")
+            };
+
+            _mockHttpMessageHandler
+                .Protected()
+                .Setup<Task<HttpResponseMessage>>(

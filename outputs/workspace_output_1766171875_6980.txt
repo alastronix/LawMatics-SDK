@@ -1,0 +1,11 @@
+            EmailAddresses = new EmailAddressesClient(_httpClient, _options, _logger);
+            EventLocations = new EventLocationsClient(_httpClient, _options, _logger);
+            EventTypes = new EventTypesClient(_httpClient, _options, _logger);
+            MatterSubStatuses = new MatterSubStatusesClient(_httpClient, _options, _logger);
+            CustomContactTypes = new CustomContactTypesClient(_httpClient, _options, _logger);
+            TaskStatuses = new TaskStatusesClient(_httpClient, _options, _logger);
+            Subtasks = new SubtasksClient(_httpClient, _options, _logger);
+            EmailCampaignStats = new EmailCampaignStatsClient(_httpClient, _options, _logger);
+            CompanyFinder = new CompanyFinderClient(_httpClient, _options, _logger);
+        }
+

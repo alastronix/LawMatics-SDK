@@ -1,0 +1,14 @@
+                .Setup<Task<HttpResponseMessage>>(
+                    "SendAsync",
+                    ItExpr.Is<HttpRequestMessage>(req => 
+                        req.Method == HttpMethod.Get && 
+                        req.RequestUri != null &&
+                        req.RequestUri.ToString().Contains("task-statuses/1")),
+                    ItExpr.IsAny<CancellationToken>())
+                .ReturnsAsync(response);
+
+            // Act
+            var result = await client.GetTaskStatusAsync(1);
+
+            // Assert
+            Assert.NotNull(result);

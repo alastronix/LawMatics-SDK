@@ -1,0 +1,59 @@
+87:                    "SendAsync",
+88-                    ItExpr.IsAny<HttpRequestMessage>(),
+89-                    ItExpr.IsAny<CancellationToken>())
+90-                .ReturnsAsync(httpResponse);
+91-
+92-            var client = new CommentsClient(_httpClient, _options, _mockLogger.Object);
+93-
+94-            // Act
+95-            var result = await client.GetCommentsAsync();
+96-
+97-            // Assert
+--
+131:                    "SendAsync",
+132-                    ItExpr.IsAny<HttpRequestMessage>(),
+133-                    ItExpr.IsAny<CancellationToken>())
+134-                .ReturnsAsync(httpResponse);
+135-
+136-            var client = new CommentsClient(_httpClient, _options, _mockLogger.Object);
+137-
+138-            // Act
+139-            var result = await client.GetCommentAsync(1);
+140-
+141-            // Assert
+--
+180:                    "SendAsync",
+181-                    ItExpr.IsAny<HttpRequestMessage>(),
+182-                    ItExpr.IsAny<CancellationToken>())
+183-                .ReturnsAsync(httpResponse);
+184-
+185-            var client = new CommentsClient(_httpClient, _options, _mockLogger.Object);
+186-
+187-            // Act
+188-            var result = await client.CreateCommentAsync(request);
+189-
+190-            // Assert
+--
+212:                    "SendAsync",
+213-                    ItExpr.IsAny<HttpRequestMessage>(),
+214-                    ItExpr.IsAny<CancellationToken>())
+215-                .ReturnsAsync(httpResponse);
+216-
+217-            var client = new CommentsClient(_httpClient, _options, _mockLogger.Object);
+218-
+219-            // Act
+220-            var result = await client.DeleteCommentAsync(1);
+221-
+222-            // Assert
+--
+241:                    "SendAsync",
+242-                    ItExpr.IsAny<HttpRequestMessage>(),
+243-                    ItExpr.IsAny<CancellationToken>())
+244-                .ReturnsAsync(httpResponse);
+245-
+246-            var client = new CommentsClient(_httpClient, _options, _mockLogger.Object);
+247-
+248-            // Act
+249-            var result = await client.BulkDeleteCommentsAsync(commentIds);
+250-
+251-            // Assert

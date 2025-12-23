@@ -1,0 +1,436 @@
+using System.Text.Json.Serialization;
+
+namespace LawMatics.SDK.Models
+{
+    /// <summary>
+    /// Represents a contact in the LawMatics system.
+    /// </summary>
+    public class Contact
+    {
+        /// <summary>
+        /// Gets or sets the unique identifier for the contact.
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the first name of the contact.
+        /// </summary>
+        [JsonPropertyName("first_name")]
+        public string? FirstName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the last name of the contact.
+        /// </summary>
+        [JsonPropertyName("last_name")]
+        public string? LastName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the email address of the contact.
+        /// </summary>
+        [JsonPropertyName("email")]
+        public string? Email { get; set; }
+
+        /// <summary>
+        /// Gets or sets the primary phone number of the contact.
+        /// </summary>
+        [JsonPropertyName("phone")]
+        public string? Phone { get; set; }
+
+        /// <summary>
+        /// Gets or sets the mobile phone number of the contact.
+        /// </summary>
+        [JsonPropertyName("mobile_phone")]
+        public string? MobilePhone { get; set; }
+
+        /// <summary>
+        /// Gets or sets the fax number of the contact.
+        /// </summary>
+        [JsonPropertyName("fax")]
+        public string? Fax { get; set; }
+
+        /// <summary>
+        /// Gets or sets the company name of the contact.
+        /// </summary>
+        [JsonPropertyName("company")]
+        public string? Company { get; set; }
+
+        /// <summary>
+        /// Gets or sets the job title of the contact.
+        /// </summary>
+        [JsonPropertyName("title")]
+        public string? Title { get; set; }
+
+        /// <summary>
+        /// Gets or sets the address of the contact.
+        /// </summary>
+        [JsonPropertyName("address")]
+        public Address? Address { get; set; }
+
+        /// <summary>
+        /// Gets or sets the date of birth of the contact.
+        /// </summary>
+        [JsonPropertyName("date_of_birth")]
+        public DateTime? DateOfBirth { get; set; }
+
+        /// <summary>
+        /// Gets or sets the social security number of the contact.
+        /// </summary>
+        [JsonPropertyName("ssn")]
+        public string? Ssn { get; set; }
+
+        /// <summary>
+        /// Gets or sets the gender of the contact.
+        /// </summary>
+        [JsonPropertyName("gender")]
+        public string? Gender { get; set; }
+
+        /// <summary>
+        /// Gets or sets the contact type.
+        /// </summary>
+        [JsonPropertyName("contact_type")]
+        public string? ContactType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the source where the contact was acquired from.
+        /// </summary>
+        [JsonPropertyName("source")]
+        public string? Source { get; set; }
+
+        /// <summary>
+        /// Gets or sets the lead status of the contact.
+        /// </summary>
+        [JsonPropertyName("lead_status")]
+        public string? LeadStatus { get; set; }
+
+        /// <summary>
+        /// Gets or sets the assigned user ID for the contact.
+        /// </summary>
+        [JsonPropertyName("assigned_user_id")]
+        public int? AssignedUserId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the assigned user name for the contact.
+        /// </summary>
+        [JsonPropertyName("assigned_user")]
+        public string? AssignedUser { get; set; }
+
+        /// <summary>
+        /// Gets or sets custom fields for the contact.
+        /// </summary>
+        [JsonPropertyName("custom_fields")]
+        public Dictionary<string, object>? CustomFields { get; set; }
+
+        /// <summary>
+        /// Gets or sets the tags associated with the contact.
+        /// </summary>
+        [JsonPropertyName("tags")]
+        public string[]? Tags { get; set; }
+
+        /// <summary>
+        /// Gets or sets the notes about the contact.
+        /// </summary>
+        [JsonPropertyName("notes")]
+        public string? Notes { get; set; }
+
+        /// <summary>
+        /// Gets or sets the date and time when the contact was created.
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime? CreatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or sets the date and time when the contact was last updated.
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime? UpdatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or sets the ID of the user who created the contact.
+        /// </summary>
+        [JsonPropertyName("created_by")]
+        public int? CreatedBy { get; set; }
+
+        /// <summary>
+        /// Gets or sets the ID of the user who last updated the contact.
+        /// </summary>
+        [JsonPropertyName("updated_by")]
+        public int? UpdatedBy { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether the contact is active.
+        /// </summary>
+        [JsonPropertyName("is_active")]
+        public bool IsActive { get; set; } = true;
+
+        /// <summary>
+        /// Gets or sets a value indicating whether the contact has opted out of communications.
+        /// </summary>
+        [JsonPropertyName("opt_out")]
+        public bool OptOut { get; set; } = false;
+
+        /// <summary>
+        /// Gets or sets the preferred communication method.
+        /// </summary>
+        [JsonPropertyName("preferred_communication")]
+        public string? PreferredCommunication { get; set; }
+
+        /// <summary>
+        /// Gets or sets the website URL of the contact.
+        /// </summary>
+        [JsonPropertyName("website")]
+        public string? Website { get; set; }
+
+        /// <summary>
+        /// Gets or sets the LinkedIn profile URL of the contact.
+        /// </summary>
+        [JsonPropertyName("linkedin")]
+        public string? LinkedIn { get; set; }
+
+        /// <summary>
+        /// Gets or sets the referral source for the contact.
+        /// </summary>
+        [JsonPropertyName("referral_source")]
+        public string? ReferralSource { get; set; }
+    }
+
+    /// <summary>
+    /// Represents the request model for creating or updating a contact.
+    /// </summary>
+    public class CreateContactRequest
+    {
+        /// <summary>
+        /// Gets or sets the first name of the contact.
+        /// </summary>
+        [JsonPropertyName("first_name")]
+        public string? FirstName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the last name of the contact.
+        /// </summary>
+        [JsonPropertyName("last_name")]
+        public string? LastName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the email address of the contact.
+        /// </summary>
+        [JsonPropertyName("email")]
+        public string? Email { get; set; }
+
+        /// <summary>
+        /// Gets or sets the primary phone number of the contact.
+        /// </summary>
+        [JsonPropertyName("phone")]
+        public string? Phone { get; set; }
+
+        /// <summary>
+        /// Gets or sets the mobile phone number of the contact.
+        /// </summary>
+        [JsonPropertyName("mobile_phone")]
+        public string? MobilePhone { get; set; }
+
+        /// <summary>
+        /// Gets or sets the fax number of the contact.
+        /// </summary>
+        [JsonPropertyName("fax")]
+        public string? Fax { get; set; }
+
+        /// <summary>
+        /// Gets or sets the company name of the contact.
+        /// </summary>
+        [JsonPropertyName("company")]
+        public string? Company { get; set; }
+
+        /// <summary>
+        /// Gets or sets the job title of the contact.
+        /// </summary>
+        [JsonPropertyName("title")]
+        public string? Title { get; set; }
+
+        /// <summary>
+        /// Gets or sets the address of the contact.
+        /// </summary>
+        [JsonPropertyName("address")]
+        public Address? Address { get; set; }
+
+        /// <summary>
+        /// Gets or sets the date of birth of the contact.
+        /// </summary>
+        [JsonPropertyName("date_of_birth")]
+        public DateTime? DateOfBirth { get; set; }
+
+        /// <summary>
+        /// Gets or sets the social security number of the contact.
+        /// </summary>
+        [JsonPropertyName("ssn")]
+        public string? Ssn { get; set; }
+
+        /// <summary>
+        /// Gets or sets the gender of the contact.
+        /// </summary>
+        [JsonPropertyName("gender")]
+        public string? Gender { get; set; }
+
+        /// <summary>
+        /// Gets or sets the contact type.
+        /// </summary>
+        [JsonPropertyName("contact_type")]
+        public string? ContactType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the source where the contact was acquired from.
+        /// </summary>
+        [JsonPropertyName("source")]
+        public string? Source { get; set; }
+
+        /// <summary>
+        /// Gets or sets the lead status of the contact.
+        /// </summary>
+        [JsonPropertyName("lead_status")]
+        public string? LeadStatus { get; set; }
+
+        /// <summary>
+        /// Gets or sets the assigned user ID for the contact.
+        /// </summary>
+        [JsonPropertyName("assigned_user_id")]
+        public int? AssignedUserId { get; set; }
+
+        /// <summary>
+        /// Gets or sets custom fields for the contact.
+        /// </summary>
+        [JsonPropertyName("custom_fields")]
+        public Dictionary<string, object>? CustomFields { get; set; }
+
+        /// <summary>
+        /// Gets or sets the tags associated with the contact.
+        /// </summary>
+        [JsonPropertyName("tags")]
+        public string[]? Tags { get; set; }
+
+        /// <summary>
+        /// Gets or sets the notes about the contact.
+        /// </summary>
+        [JsonPropertyName("notes")]
+        public string? Notes { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether the contact is active.
+        /// </summary>
+        [JsonPropertyName("is_active")]
+        public bool? IsActive { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether the contact has opted out of communications.
+        /// </summary>
+        [JsonPropertyName("opt_out")]
+        public bool? OptOut { get; set; }
+
+        /// <summary>
+        /// Gets or sets the preferred communication method.
+        /// </summary>
+        [JsonPropertyName("preferred_communication")]
+        public string? PreferredCommunication { get; set; }
+
+        /// <summary>
+        /// Gets or sets the website URL of the contact.
+        /// </summary>
+        [JsonPropertyName("website")]
+        public string? Website { get; set; }
+
+        /// <summary>
+        /// Gets or sets the LinkedIn profile URL of the contact.
+        /// </summary>
+        [JsonPropertyName("linkedin")]
+        public string? LinkedIn { get; set; }
+
+        /// <summary>
+        /// Gets or sets the referral source for the contact.
+        /// </summary>
+        [JsonPropertyName("referral_source")]
+        public string? ReferralSource { get; set; }
+    }
+
+    /// <summary>
+    /// Represents the request parameters for filtering contacts.
+    /// </summary>
+    public class GetContactsParameters : FilterParameters
+    {
+        /// <summary>
+        /// Gets or sets a filter for contact first name.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? FirstName { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for contact last name.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? LastName { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for contact email.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? Email { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for contact company.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? Company { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for contact type.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? ContactType { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for lead status.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? LeadStatus { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for assigned user ID.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public int? AssignedUserId { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for source.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? Source { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for created date (greater than).
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public DateTime? CreatedAfter { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for created date (less than).
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public DateTime? CreatedBefore { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for updated date (greater than).
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public DateTime? UpdatedAfter { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for updated date (less than).
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public DateTime? UpdatedBefore { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for active status.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public bool? IsActive { get; set; }
+    }
+}

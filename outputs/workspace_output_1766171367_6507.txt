@@ -1,0 +1,3 @@
+/workspace/LawMatics.SDK.Tests/Configuration/LawMaticsClientOptionsTests.cs
+/workspace/LawMatics.SDK.Tests/Authentication/LawMaticsCredentialsTests.cs
+/workspace/LawMatics.SDK.Tests/LawMaticsClientTests.cs

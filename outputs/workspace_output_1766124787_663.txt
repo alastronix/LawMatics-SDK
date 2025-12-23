@@ -1,0 +1,1 @@
+Reference `..\LawMatics.SDK\LawMatics.SDK.csproj` added to the project.

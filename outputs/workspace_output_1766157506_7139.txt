@@ -1,0 +1,11 @@
+79:            await PostAsync($"/email-campaigns/{id}/send");
+89:            await PostAsync($"/email-campaigns/{id}/schedule", new { scheduled_at = scheduledAt });
+98:            await PostAsync($"/email-campaigns/{id}/unschedule");
+107:            await PostAsync($"/email-campaigns/{id}/pause");
+116:            await PostAsync($"/email-campaigns/{id}/resume");
+125:            await PostAsync($"/email-campaigns/{id}/cancel");
+258:            await PostAsync($"/email-campaigns/{id}/test", new { test_emails = testEmailAddresses });
+281:            await PostAsync($"/email-campaigns/{id}/recipients", new { contact_ids = contactIds });
+291:            await PostAsync($"/email-campaigns/{id}/recipients/remove", new { contact_ids = contactIds });
+322:            await PostAsync("/email-campaigns/bulk-send", new { campaign_ids = campaignIds });
+331:            await PostAsync("/email-campaigns/bulk-delete", new { campaign_ids = campaignIds });

@@ -1,0 +1,16 @@
+        public async Task<bool> DeleteCommentAsync(int id, CancellationToken cancellationToken = default)
+        {
+            var response = await DeleteAsync($"comments/{id}", cancellationToken);
+            return response;
+        }
+
+        /// <summary>
+        /// Gets comments for a specific entity
+        /// </summary>
+        /// <param name="entityType">Type of entity (e.g., 'contact', 'matter', 'company')</param>
+        /// <param name="entityId">ID of the entity</param>
+        /// <param name="parameters">Optional filter parameters</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of comments for the entity</returns>
+        public async Task<PagedResponse<Comment>> GetCommentsByEntityAsync(string entityType, int entityId, GetCommentsParameters? parameters = null, CancellationToken cancellationToken = default)
+        {

@@ -1,0 +1,148 @@
+Build started 12/19/2025 06:20:34.
+     1>Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" on node 1 (Restore target(s)).
+     1>_GetAllRestoreProjectPathItems:
+         Determining projects to restore...
+       Restore:
+         X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/codesignctl.pem'.
+         X.509 certificate chain validation will use the fallback certificate bundle at '/root/.dotnet/sdk/9.0.308/trustedroots/timestampctl.pem'.
+         Assets file has not changed. Skipping assets file writing. Path: /workspace/LawMatics.SDK.Tests/obj/project.assets.json
+         Assets file has not changed. Skipping assets file writing. Path: /workspace/LawMatics.SDK/obj/project.assets.json
+         Restored /workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj (in 44 ms).
+         Restored /workspace/LawMatics.SDK/LawMatics.SDK.csproj (in 42 ms).
+         
+         NuGet Config files used:
+             /root/.nuget/NuGet/NuGet.Config
+         
+         Feeds used:
+             https://api.nuget.org/v3/index.json
+         All projects are up-to-date for restore.
+     1>Done Building Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (Restore target(s)).
+   1:7>Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" on node 1 (VSTest target(s)).
+     1>BuildProject:
+         Build started, please wait...
+   1:7>Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (1:7) is building "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (1:8) on node 1 (default targets).
+   1:8>Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (1:8) is building "/workspace/LawMatics.SDK/LawMatics.SDK.csproj" (2:6) on node 1 (default targets).
+     2>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreGenerateAssemblyInfo:
+       Skipping target "CoreGenerateAssemblyInfo" because all output files are up-to-date with respect to the input files.
+       _GenerateSourceLinkFile:
+         Source Link is empty, file 'obj/Debug/net9.0/LawMatics.SDK.sourcelink.json' does not exist.
+       CoreCompile:
+       Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
+         LawMatics.SDK -> /workspace/LawMatics.SDK/bin/Debug/net9.0/LawMatics.SDK.dll
+     2>Done Building Project "/workspace/LawMatics.SDK/LawMatics.SDK.csproj" (default targets).
+     1>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreGenerateAssemblyInfo:
+       Skipping target "CoreGenerateAssemblyInfo" because all output files are up-to-date with respect to the input files.
+       _GenerateSourceLinkFile:
+         Source Link is empty, file 'obj/Debug/net9.0/LawMatics.SDK.Tests.sourcelink.json' does not exist.
+       CoreCompile:
+       Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+       _CopyOutOfDateSourceItemsToOutputDirectory:
+       Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildRuntimeConfigurationFiles:
+       Skipping target "GenerateBuildRuntimeConfigurationFiles" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
+         LawMatics.SDK.Tests -> /workspace/LawMatics.SDK.Tests/bin/Debug/net9.0/LawMatics.SDK.Tests.dll
+     1>Done Building Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (default targets).
+     1>BuildProject:
+         Build completed.
+         
+Test run for /workspace/LawMatics.SDK.Tests/bin/Debug/net9.0/LawMatics.SDK.Tests.dll (.NETCoreApp,Version=v9.0)
+VSTest version 17.14.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.11)
+[xUnit.net 00:00:00.06]   Discovering: LawMatics.SDK.Tests
+[xUnit.net 00:00:00.09]   Discovered:  LawMatics.SDK.Tests
+[xUnit.net 00:00:00.09]   Starting:    LawMatics.SDK.Tests
+  Passed LawMatics.SDK.Tests.UnitTest1.Test1 [2 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.FromTokenResponse_WithNullTokenResponse_ThrowsArgumentNullException [1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.IsExpired_WithNoExpiration_ReturnsFalse [1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.Constructor_WithNullClientSecret_ThrowsArgumentNullException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.Constructor_WithNullAccessToken_ThrowsArgumentNullException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.IsExpired_WithExpiredToken_ReturnsTrue [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.HasRefreshToken_WithEmptyRefreshToken_ReturnsFalse [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.ConstructorWithFullCredentials_WithNullAccessToken_ThrowsArgumentNullException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.FromTokenResponse_WithFullResponse_CreatesCredentials [1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.Constructor_WithAccessToken_SetsAccessToken [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.IsExpired_WithValidToken_ReturnsFalse [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.UpdateToken_WithOnlyAccessToken_UpdatesOnlyAccessToken [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.Constructor_WithNullClientId_ThrowsArgumentNullException [1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.FromTokenResponse_WithNoExpiration_CreatesCredentialsWithoutExpiration [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.HasRefreshToken_WithNullRefreshToken_ReturnsFalse [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.UpdateToken_WithEmptyRefreshToken_DoesNotUpdateRefreshToken [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.Constructor_WithFullCredentials_SetsAllProperties [4 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.HasRefreshToken_WithRefreshToken_ReturnsTrue [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.UpdateToken_WithNullAccessToken_ThrowsArgumentNullException [3 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.UpdateToken_WithAllParameters_UpdatesAllTokenProperties [< 1 ms]
+  Passed LawMatics.SDK.Tests.Authentication.LawMaticsCredentialsTests.IsExpired_WithTokenExpiringSoon_ReturnsTrue [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithNegativeRetryDelay_ThrowsArgumentException [4 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.RemoveCustomHeader_WithEmptyName_ReturnsFalse [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Production_ReturnsProductionOptions [2 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithInvalidAuthorizationUrl_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithEmptyApiVersion_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.AddCustomHeader_WithEmptyName_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.RemoveCustomHeader_WithExistingHeader_RemovesHeader [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.GetApiUrl_WithEmptyEndpoint_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.AddCustomHeader_WithExistingName_OverwritesValue [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.AddCustomHeader_WithNullValue_SetsEmptyValue [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.GetApiUrl_WithEndpointStartingWithSlash_ReturnsFullUrl [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.RemoveCustomHeader_WithNullName_ReturnsFalse [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.RemoveCustomHeader_WithNonExistingHeader_ReturnsFalse [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.AddCustomHeader_WithNullName_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithNullApiVersion_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithInvalidTokenUrl_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithNegativeTimeout_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithDefaultOptions_DoesNotThrow [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.AddCustomHeader_WithValidParameters_AddsHeader [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithInvalidBaseUrl_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Development_ReturnsDevelopmentOptions [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithEmptyBaseUrl_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.GetApiUrl_WithValidEndpoint_ReturnsFullUrl [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithZeroTimeout_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.GetApiUrl_WithNullEndpoint_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithNegativeMaxRetryAttempts_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Validate_WithNullBaseUrl_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Configuration.LawMaticsClientOptionsTests.Default_ReturnsDefaultOptions [2 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.Constructor_WithNegativeTimeout_ThrowsArgumentException [73 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.Constructor_WithNullCredentials_ThrowsArgumentNullException [< 1 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.UpdateCredentials_WithNullCredentials_ThrowsArgumentNullException [7 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.Constructor_WithInvalidBaseUrl_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Clients.ContactsClientTests.CreateContactAsync_WithEmptyRequest_ThrowsArgumentException [38 ms]
+  Passed LawMatics.SDK.Tests.Clients.ContactsClientTests.GetContactAsync_WithNegativeId_ThrowsArgumentException [1 ms]
+  Passed LawMatics.SDK.Tests.Clients.ContactsClientTests.Constructor_WithValidClient_DoesNotThrow [< 1 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.DeleteAsync_WithValidEndpoint_ReturnsResponse [91 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.Dispose_CanBeCalledMultipleTimes_DoesNotThrow [< 1 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.UpdateCredentials_WithValidCredentials_UpdatesCredentials [< 1 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.Constructor_WithNullOptions_UsesDefaultOptions [< 1 ms]
+[xUnit.net 00:00:00.32]   Finished:    LawMatics.SDK.Tests
+  Passed LawMatics.SDK.Tests.Clients.ContactsClientTests.CreateContactAsync_WithValidContact_ReturnsCreatedContact [85 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.PutAsync_WithValidData_ReturnsResponse [11 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.Constructor_WithValidParameters_CreatesClient [< 1 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.Constructor_WithNullLogger_UsesNullLogger [< 1 ms]
+  Passed LawMatics.SDK.Tests.Clients.ContactsClientTests.GetContactAsync_WithValidId_ReturnsContact [3 ms]
+  Passed LawMatics.SDK.Tests.Clients.ContactsClientTests.GetContactAsync_WithInvalidId_ThrowsArgumentException [< 1 ms]
+  Passed LawMatics.SDK.Tests.Clients.ContactsClientTests.CreateContactAsync_WithNullRequest_ThrowsArgumentNullException [< 1 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.GetAsync_WithValidEndpoint_ReturnsResponse [3 ms]
+  Passed LawMatics.SDK.Tests.LawMaticsClientTests.PostAsync_WithValidData_ReturnsResponse [2 ms]
+
+Test Run Successful.
+Total tests: 69
+     Passed: 69
+ Total time: 0.6788 Seconds
+     1>Done Building Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (VSTest target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.85

@@ -1,0 +1,7 @@
+./LawMatics.SDK/Clients/CompaniesClient.cs
+./LawMatics.SDK/Clients/EmailCampaignsClient.cs
+./LawMatics.SDK/Clients/FilesClient.cs
+./LawMatics.SDK/Clients/FoldersClient.cs
+./LawMatics.SDK/Clients/MattersClient.cs
+./LawMatics.SDK/Clients/CustomFieldsClient.cs
+./LawMatics.SDK/Clients/ContactsClient.cs

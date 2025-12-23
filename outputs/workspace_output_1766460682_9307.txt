@@ -1,0 +1,11 @@
+                .ReturnsAsync(response);
+
+            // Act
+            var result = await client.GetEmailAddressAsync(1);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal(1, result.Id);
+            Assert.Equal("john.doe@example.com", result.Email);
+            Assert.True(result.IsPrimary);
+        }

@@ -1,0 +1,11 @@
+64:        public async Task<EventLocation?> GetEventLocationAsync(int id, CancellationToken cancellationToken = default)
+65-        {
+66-            return await GetAsync<EventLocation>($"event-locations/{id}", cancellationToken: cancellationToken);
+67-        }
+68-
+69-        /// <summary>
+70-        /// Creates a new event location.
+71-        /// </summary>
+72-        /// <param name="request">The event location creation request.</param>
+73-        /// <param name="cancellationToken">Cancellation token.</param>
+74-        /// <returns>The created event location.</returns>

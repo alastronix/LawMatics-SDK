@@ -1,0 +1,11 @@
+                Id = 1,
+                Name = request.Name,
+                Description = request.Description,
+                CreatedAt = DateTime.UtcNow.AddDays(-1),
+                UpdatedAt = DateTime.UtcNow
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")

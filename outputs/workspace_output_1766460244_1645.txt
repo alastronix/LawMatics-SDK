@@ -1,0 +1,15 @@
+            _mockHttpMessageHandler
+                .Protected()
+                .Setup<Task<HttpResponseMessage>>(
+                    "SendAsync",
+                    ItExpr.Is<HttpRequestMessage>(req => req.Method == HttpMethod.Get && req.RequestUri.ToString().Contains("comments?")),
+                    ItExpr.IsAny<CancellationToken>())
+                .ReturnsAsync(httpResponse);
+
+            var client = new CommentsClient(_httpClient, _options, _mockLogger.Object);
+
+            // Act
+            var result = await client.GetCommentsAsync();
+
+            // Assert
+            Assert.NotNull(result);

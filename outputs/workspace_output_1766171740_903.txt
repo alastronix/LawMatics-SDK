@@ -1,0 +1,12 @@
+25:        public async Task<PagedResponse<Company>> SearchCompaniesAsync(
+131:        public async Task<PagedResponse<Company>> FindCompaniesByNameAsync(
+158:        public async Task<PagedResponse<Company>> FindCompaniesByWebsiteAsync(
+185:        public async Task<PagedResponse<Company>> FindCompaniesByPhoneAsync(
+211:        public async Task<PagedResponse<Company>> FindCompaniesByEmailDomainAsync(
+235:        public async Task<PagedResponse<Company>> FindCompaniesByLocationAsync(
+279:        public async Task<PagedResponse<Company>> FindCompaniesByMattersAsync(
+326:        public async Task<List<Company>> GetCompanyRecommendationsAsync(
+372:        public async Task<PagedResponse<CompanyDuplicate>> FindPotentialDuplicatesAsync(
+397:        public async Task<CompanyEnrichment?> GetCompanyEnrichmentAsync(
+418:        public async Task<List<CompanySuggestion>> GetSearchSuggestionsAsync(
+443:        public async Task<byte[]> ExportCompanySearchToCsvAsync(

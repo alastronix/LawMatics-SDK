@@ -1,0 +1,56 @@
+752:    public class TaskStatus
+753-    {
+754-        /// <summary>
+755-        /// Gets or sets the task status ID.
+756-        /// </summary>
+757-        [JsonPropertyName("id")]
+758-        public int Id { get; set; }
+759-
+760-        /// <summary>
+761-        /// Gets or sets the task status name.
+762-        /// </summary>
+763-        [JsonPropertyName("name")]
+764-        public string Name { get; set; } = string.Empty;
+765-
+766-        /// <summary>
+767-        /// Gets or sets the task status description.
+768-        /// </summary>
+769-        [JsonPropertyName("description")]
+770-        public string? Description { get; set; }
+771-
+772-        /// <summary>
+773-        /// Gets or sets the color for the status.
+774-        /// </summary>
+775-        [JsonPropertyName("color")]
+776-        public string? Color { get; set; }
+777-
+778-        /// <summary>
+779-        /// Gets or sets whether this is a completed status.
+780-        /// </summary>
+781-        [JsonPropertyName("is_completed")]
+782-        public bool IsCompleted { get; set; }
+783-
+784-        /// <summary>
+785-        /// Gets or sets the sort order.
+786-        /// </summary>
+787-        [JsonPropertyName("sort_order")]
+788-        public int SortOrder { get; set; }
+789-
+790-        /// <summary>
+791-        /// Gets or sets whether the status is active.
+792-        /// </summary>
+793-        [JsonPropertyName("is_active")]
+794-        public bool IsActive { get; set; }
+795-
+796-        /// <summary>
+797-        /// Gets or sets the creation date.
+798-        /// </summary>
+799-        [JsonPropertyName("created_at")]
+800-        public DateTime CreatedAt { get; set; }
+801-
+802-        /// <summary>
+803-        /// Gets or sets the last update date.
+804-        /// </summary>
+805-        [JsonPropertyName("updated_at")]
+806-        public DateTime UpdatedAt { get; set; }
+807-    }

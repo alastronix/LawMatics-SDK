@@ -1,0 +1,2 @@
+201:            CompanyFinder = new CompanyFinderClient(_httpClient, _options, _logger);
+257:            CompanyFinder = new CompanyFinderClient(_httpClient, _options, _logger);

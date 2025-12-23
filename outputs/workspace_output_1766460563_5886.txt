@@ -1,0 +1,17 @@
+        [Fact]
+        public async Task GetCustomEmailAsync_WithValidId_ReturnsCustomEmail()
+        {
+            // Arrange
+            var client = new CustomEmailsClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new CustomEmail
+            {
+                Id = 1,
+                Name = "Welcome Email",
+                Subject = "Welcome to Our Firm",
+                Body = "Dear {{contact_name}}, welcome to our firm!",
+                IsActive = true,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);

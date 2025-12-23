@@ -1,0 +1,5 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  LawMatics.SDK -> /workspace/LawMatics.SDK/bin/Release/net9.0/LawMatics.SDK.dll
+  The package LawMatics.SDK.1.0.0 is missing a readme. Go to https://aka.ms/nuget/authoring-best-practices/readme to learn why package readmes are important.
+  Successfully created package '/workspace/LawMatics.SDK.1.0.0.nupkg'.

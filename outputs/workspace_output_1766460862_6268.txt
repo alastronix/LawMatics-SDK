@@ -1,0 +1,11 @@
+[xUnit.net 00:00:00.89]     LawMatics.SDK.Tests.TimeEntriesClientTests.UpdateTimeEntryAsync_WithValidIdAndRequest_ReturnsUpdatedTimeEntry [FAIL]
+[xUnit.net 00:00:00.89]     LawMatics.SDK.Tests.TasksClientTests.CreateTaskAsync_WithValidRequest_ReturnsCreatedTask [FAIL]
+[xUnit.net 00:00:00.89]     LawMatics.SDK.Tests.CustomContactTypesClientTests.GetActiveCustomContactTypesAsync_ReturnsOnlyActiveContactTypes [FAIL]
+[xUnit.net 00:00:00.99]     LawMatics.SDK.Tests.CustomContactTypesClientTests.UpdateCustomContactTypeAsync_WithValidIdAndRequest_ReturnsUpdatedCustomContactType [FAIL]
+[xUnit.net 00:00:01.00]     LawMatics.SDK.Tests.TimeEntriesClientTests.CreateTimeEntryAsync_WithValidRequest_ReturnsCreatedTimeEntry [FAIL]
+[xUnit.net 00:00:01.01]     LawMatics.SDK.Tests.TasksClientTests.UpdateTaskAsync_WithValidIdAndRequest_ReturnsUpdatedTask [FAIL]
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Failed!  - Failed:     6, Passed:   103, Skipped:     0, Total:   109, Duration: 884 ms - LawMatics.SDK.Tests.dll (net8.0)

@@ -1,0 +1,11 @@
+        public async Task DeleteCommentAsync_WithValidId_ReturnsTrue()
+        {
+            // Arrange
+            var apiResponse = new ApiResponse<object> { Data = null };
+            var responseJson = JsonSerializer.Serialize(apiResponse);
+            var httpResponse = new HttpResponseMessage(HttpStatusCode.NoContent)
+            {
+                Content = new StringContent(responseJson, System.Text.Encoding.UTF8, "application/json")
+            };
+
+            _mockHttpMessageHandler

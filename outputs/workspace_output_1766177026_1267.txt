@@ -1,0 +1,7 @@
+        public async Task<bool> BulkDeleteCommentsAsync(List<int> commentIds, CancellationToken cancellationToken = default)
+        {
+            var response = await PostAsync<ApiResponse<object>>("comments/bulk/delete", new { comment_ids = commentIds }, cancellationToken);
+            return response != null;
+        }
+    }
+}

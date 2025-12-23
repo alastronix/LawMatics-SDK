@@ -1,0 +1,23 @@
+                    new CustomEmail
+                    {
+                        Id = 1,
+                        Name = "Welcome Email",
+                        Subject = "Welcome to Our Firm",
+                        Body = "Dear {{contact_name}}, welcome to our firm!",
+                        IsActive = true,
+                        CreatedAt = DateTime.UtcNow,
+                        UpdatedAt = DateTime.UtcNow
+                    }
+                },
+                Pagination = new PaginationInfo
+{ 
+                    CurrentPage = 1,
+                    PerPage = 20,
+                    Total = 1
+                ,
+                        TotalPages = 1,
+                        HasNext = false
+                        }
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);

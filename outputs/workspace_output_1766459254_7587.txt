@@ -1,0 +1,21 @@
+470:    public class TimeEntry
+471-    {
+472-        /// <summary>
+473-        /// Unique identifier for the time entry
+474-        /// </summary>
+475-        [JsonPropertyName("id")]
+476-        public int Id { get; set; }
+477-
+478-        /// <summary>
+479-        /// Time entry description
+480-        /// </summary>
+481-        [JsonPropertyName("description")]
+482-        public string Description { get; set; } = string.Empty;
+483-
+484-        /// <summary>
+485-        /// Hours worked
+486-        /// </summary>
+487-        [JsonPropertyName("hours")]
+488-        public decimal Hours { get; set; }
+489-
+490-        /// <summary>

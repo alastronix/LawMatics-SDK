@@ -1,0 +1,16 @@
+
+        [Fact]
+        public async Task GetCustomEmailsAsync_WithValidParameters_ReturnsCustomEmails()
+        {
+            // Arrange
+            var client = new CustomEmailsClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new PagedResponse<CustomEmail>
+            {
+                Data = new List<CustomEmail>
+                {
+                    new CustomEmail
+                    {
+                        Id = 1,
+                        Name = "Welcome Email",
+                        Subject = "Welcome to Our Firm",
+                        Body = "Dear {{contact_name}}, welcome to our firm!",

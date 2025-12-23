@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading;
+using System.Threading.Tasks;
+using LawMatics.SDK.Authentication;
+using LawMatics.SDK.Configuration;
+using LawMatics.SDK.Clients;
+using LawMatics.SDK.Models;
+using Microsoft.Extensions.Logging;
+using Moq;
+using Moq.Protected;
+using Xunit;
+
+namespace LawMatics.SDK.Tests
+{
+    /// <summary>
+    /// Unit tests for the <see cref="CustomContactTypesClient"/> class.
+    /// </summary>
+    public class CustomContactTypesClientTests : IDisposable
+    {
+        private readonly Mock<HttpMessageHandler> _mockHttpMessageHandler;
+        private readonly Mock<ILogger<CustomContactTypesClient>> _mockLogger;
+        private readonly LawMaticsClientOptions _options;
+        private readonly LawMaticsCredentials _credentials;
+        private readonly HttpClient _httpClient;
+
+        public CustomContactTypesClientTests()
+        {
+            _mockHttpMessageHandler = new Mock<HttpMessageHandler>();
+            _mockLogger = new Mock<ILogger<CustomContactTypesClient>>();
+            _options = new LawMaticsClientOptions
+            {
+                BaseUrl = "https://api.test.lawmatics.com",
+                ApiVersion = "v1",
+                TimeoutSeconds = 30
+            };
+            _credentials = new LawMaticsCredentials("test-access-token");
+            _httpClient = new HttpClient(_mockHttpMessageHandler.Object)
+            {
+                BaseAddress = new Uri(_options.BaseUrl)
+            };
+        }
+
+        [Fact]
+        public async Task GetCustomContactTypesAsync_WithValidParameters_ReturnsCustomContactTypes()
+        {
+            // Arrange

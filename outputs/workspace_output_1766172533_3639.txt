@@ -1,0 +1,21 @@
+    public class PaginationInfo
+    {
+        /// <summary>
+        /// Gets or sets the current page number (1-based).
+        /// </summary>
+        [JsonPropertyName("current_page")]
+        public int CurrentPage { get; set; }
+
+        /// <summary>
+        /// Gets or sets the number of items per page.
+        /// </summary>
+        [JsonPropertyName("per_page")]
+        public int PerPage { get; set; }
+
+        /// <summary>
+        /// Gets or sets the total number of items available.
+        /// </summary>
+        [JsonPropertyName("total")]
+        public int Total { get; set; }
+
+        /// <summary>

@@ -1,0 +1,3 @@
+149:        public CompanyFinderClient CompanyFinder { get; }
+196:            CompanyFinder = new CompanyFinderClient(_httpClient, _options, _logger);
+252:            CompanyFinder = new CompanyFinderClient(_httpClient, _options, _logger);

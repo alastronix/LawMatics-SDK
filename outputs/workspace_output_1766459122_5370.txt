@@ -1,0 +1,24 @@
+14-    public abstract class BaseClient
+15-    {
+16-        protected readonly HttpClient _httpClient;
+17-        protected readonly LawMaticsClientOptions _options;
+18-        protected readonly ILogger? _logger;
+19:        protected readonly JsonSerializerOptions _jsonOptions;
+20-
+21-        protected BaseClient(HttpClient httpClient, LawMaticsClientOptions options, ILogger? logger = null)
+22-        {
+23-            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+24-            _options = options ?? throw new ArgumentNullException(nameof(options));
+25-            _logger = logger;
+26-
+27:            _jsonOptions = new JsonSerializerOptions
+28-            {
+29-                PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+30-                DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+31-                Converters = { new System.Text.Json.Serialization.JsonStringEnumConverter() }
+32-            };
+33-        }
+34-
+35-        protected async Task<ApiResponse<T>> GetAsync<T>(string endpoint)
+36-        {
+37-            return await SendRequestAsync<T>(HttpMethod.Get, endpoint);

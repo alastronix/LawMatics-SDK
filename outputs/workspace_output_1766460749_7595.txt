@@ -1,0 +1,6 @@
+        public async Task<TaskStatus?> GetTaskStatusAsync(int id, CancellationToken cancellationToken = default)
+        {
+            return await GetAsync<TaskStatus>($"task-statuses/{id}", cancellationToken: cancellationToken);
+        }
+
+        /// <summary>

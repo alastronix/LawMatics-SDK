@@ -1,0 +1,17 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  LawMatics.SDK -> /workspace/LawMatics.SDK/bin/Debug/net9.0/LawMatics.SDK.dll
+/workspace/LawMatics.SDK.Tests/CommentsClientTests.cs(78,90): warning CS8602: Dereference of a possibly null reference. [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/CommentsClientTests.cs(121,90): warning CS8602: Dereference of a possibly null reference. [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/CommentsClientTests.cs(170,91): warning CS8602: Dereference of a possibly null reference. [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/CommentsClientTests.cs(202,93): warning CS8602: Dereference of a possibly null reference. [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/CommentsClientTests.cs(231,91): warning CS8602: Dereference of a possibly null reference. [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+/workspace/LawMatics.SDK.Tests/CommentsClientTests.cs(241,13): warning xUnit2002: Do not use Assert.NotNull() on value type 'bool'. Remove this assert. (https://xunit.net/xunit.analyzers/rules/xUnit2002) [/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj]
+  LawMatics.SDK.Tests -> /workspace/LawMatics.SDK.Tests/bin/Debug/net9.0/LawMatics.SDK.Tests.dll
+Test run for /workspace/LawMatics.SDK.Tests/bin/Debug/net9.0/LawMatics.SDK.Tests.dll (.NETCoreApp,Version=v9.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     5, Skipped:     0, Total:     5, Duration: 176 ms - LawMatics.SDK.Tests.dll (net9.0)

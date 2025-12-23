@@ -1,0 +1,21 @@
+[xUnit.net 00:00:00.28]     LawMatics.SDK.Tests.TaskStatusesClientTests.GetTaskStatusAsync_WithValidId_ReturnsTaskStatus [FAIL]
+[xUnit.net 00:00:00.28]       Assert.NotNull() Failure: Value is null
+[xUnit.net 00:00:00.28]       Stack Trace:
+[xUnit.net 00:00:00.28]         /workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs(155,0): at LawMatics.SDK.Tests.TaskStatusesClientTests.GetTaskStatusAsync_WithValidId_ReturnsTaskStatus()
+[xUnit.net 00:00:00.28]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.29]   Finished:    LawMatics.SDK.Tests
+--
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.TaskStatusesClientTests.GetTaskStatusAsync_WithValidId_ReturnsTaskStatus() in /workspace/LawMatics.SDK.Tests/TaskStatusesClientTests.cs:line 155
+--- End of stack trace from previous location ---
+
+--
+     1>Done Building Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (VSTest target(s)) -- FAILED.
+
+Build FAILED.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.91

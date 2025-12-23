@@ -1,0 +1,24 @@
+            Assert.Equal(1, result.Data[0].Id);
+            Assert.Equal("Review Contract", result.Data[0].Title);
+        }
+
+        [Fact]
+        public async Task GetTaskAsync_WithValidId_ReturnsTask()
+        {
+            // Arrange
+            var client = new TasksClient(_httpClient, _options, _mockLogger.Object);
+            var expectedResponse = new TaskItem
+            {
+                Id = 1,
+                Title = "Review Contract",
+                Description = "Review the new client contract",
+                DueDate = DateTime.UtcNow.AddDays(7),
+                Priority = "high",
+                StatusId = 1,
+                AssignedToId = 1,
+                MatterId = 1,
+                ContactId = 1,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);

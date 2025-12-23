@@ -1,0 +1,20 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  LawMatics.SDK -> /workspace/LawMatics.SDK/bin/Debug/net8.0/LawMatics.SDK.dll
+  LawMatics.SDK.Tests -> /workspace/LawMatics.SDK.Tests/bin/Debug/net8.0/LawMatics.SDK.Tests.dll
+Test run for /workspace/LawMatics.SDK.Tests/bin/Debug/net8.0/LawMatics.SDK.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.22)
+[xUnit.net 00:00:00.04]   Discovering: LawMatics.SDK.Tests
+[xUnit.net 00:00:00.07]   Discovered:  LawMatics.SDK.Tests
+[xUnit.net 00:00:00.08]   Starting:    LawMatics.SDK.Tests
+[xUnit.net 00:00:00.27]   Finished:    LawMatics.SDK.Tests
+  Passed LawMatics.SDK.Tests.CommentsClientTests.GetCommentAsync_WithValidId_ReturnsComment [147 ms]
+
+Test Run Successful.
+Total tests: 1
+     Passed: 1
+ Total time: 0.7155 Seconds

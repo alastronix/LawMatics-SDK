@@ -1,0 +1,369 @@
+using LawMatics.SDK.Authentication;
+using LawMatics.SDK.Clients;
+using LawMatics.SDK.Configuration;
+using LawMatics.SDK.Exceptions;
+using LawMatics.SDK.Models;
+using Microsoft.Extensions.Logging;
+
+namespace LawMatics.SDK
+{
+    /// <summary>
+    /// Main client for interacting with the Lawmatics API
+    /// </summary>
+    public class LawMaticsClient : IDisposable
+    {
+        private readonly HttpClient _httpClient;
+        private readonly LawMaticsClientOptions _options;
+        private readonly ILogger? _logger;
+        private readonly LawMaticsCredentials _credentials;
+        private bool _disposed = false;
+
+        /// <summary>
+        /// Gets the contacts client
+        /// </summary>
+        public ContactsClient Contacts { get; }
+
+        /// <summary>
+        /// Gets the companies client
+        /// </summary>
+        public CompaniesClient Companies { get; }
+
+        /// <summary>
+        /// Gets the matters client
+        /// </summary>
+        public MattersClient Matters { get; }
+
+        /// <summary>
+        /// Gets the events client
+        /// </summary>
+        public EventsClient Events { get; }
+
+        /// <summary>
+        /// Gets the files client
+        /// </summary>
+        public FilesClient Files { get; }
+
+        /// <summary>
+        /// Gets the folders client
+        /// </summary>
+        public FoldersClient Folders { get; }
+
+        /// <summary>
+        /// Gets the email campaigns client
+        /// </summary>
+        public EmailCampaignsClient EmailCampaigns { get; }
+
+        /// <summary>
+        /// Gets the payments client
+        /// </summary>
+        public PaymentsClient Payments { get; }
+
+        /// <summary>
+        /// Gets the custom fields client
+        /// </summary>
+        public CustomFieldsClient CustomFields { get; }
+
+        /// <summary>
+        /// Gets the custom forms client
+        /// </summary>
+        public CustomFormsClient CustomForms { get; }
+
+        /// <summary>
+        /// Gets the notes client
+        /// </summary>
+        public NotesClient Notes { get; }
+
+        /// <summary>
+        /// Gets the users client
+        /// </summary>
+        public UsersClient Users { get; }
+
+        /// <summary>
+        /// Initializes a new instance of the LawmaticsClient class
+        /// </summary>
+        /// <param name="credentials">Authentication credentials</param>
+        /// <param name="options">Client configuration options</param>
+        /// <param name="logger">Optional logger</param>
+        public LawMaticsClient(LawMaticsCredentials credentials, LawMaticsClientOptions? options = null, ILogger? logger = null)
+        {
+            _credentials = credentials ?? throw new ArgumentNullException(nameof(credentials));
+            _options = options ?? LawMaticsClientOptions.Production;
+            _logger = logger;
+
+            _httpClient = CreateHttpClient();
+            
+            // Initialize all client properties
+            Contacts = new ContactsClient(_httpClient, _options, _logger);
+            Companies = new CompaniesClient(_httpClient, _options, _logger);
+            Matters = new MattersClient(_httpClient, _options, _logger);
+            Events = new EventsClient(_httpClient, _options, _logger);
+            Files = new FilesClient(_httpClient, _options, _logger);
+            Folders = new FoldersClient(_httpClient, _options, _logger);
+            EmailCampaigns = new EmailCampaignsClient(_httpClient, _options, _logger);
+            Payments = new PaymentsClient(_httpClient, _options, _logger);
+            CustomFields = new CustomFieldsClient(_httpClient, _options, _logger);
+            CustomForms = new CustomFormsClient(_httpClient, _options, _logger);
+            Notes = new NotesClient(_httpClient, _options, _logger);
+            Users = new UsersClient(_httpClient, _options, _logger);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the LawmaticsClient class with API key authentication
+        /// </summary>
+        /// <param name="apiKey">API key for authentication</param>
+        /// <param name="options">Client configuration options</param>
+        /// <param name="logger">Optional logger</param>
+        public LawMaticsClient(string apiKey, LawMaticsClientOptions? options = null, ILogger? logger = null)
+            : this(new LawMaticsCredentials(apiKey), options, logger)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the LawmaticsClient class with custom HttpClient
+        /// </summary>
+        /// <param name="credentials">Authentication credentials</param>
+        /// <param name="httpClient">Custom HttpClient</param>
+        /// <param name="options">Client configuration options</param>
+        /// <param name="logger">Optional logger</param>
+        public LawMaticsClient(LawMaticsCredentials credentials, HttpClient httpClient, LawMaticsClientOptions? options = null, ILogger? logger = null)
+        {
+            _credentials = credentials ?? throw new ArgumentNullException(nameof(credentials));
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+            _options = options ?? LawMaticsClientOptions.Production;
+            _logger = logger;
+
+            ConfigureHttpClient(_httpClient);
+            
+            // Initialize all client properties
+            Contacts = new ContactsClient(_httpClient, _options, _logger);
+            Companies = new CompaniesClient(_httpClient, _options, _logger);
+            Matters = new MattersClient(_httpClient, _options, _logger);
+            Events = new EventsClient(_httpClient, _options, _logger);
+            Files = new FilesClient(_httpClient, _options, _logger);
+            Folders = new FoldersClient(_httpClient, _options, _logger);
+            EmailCampaigns = new EmailCampaignsClient(_httpClient, _options, _logger);
+            Payments = new PaymentsClient(_httpClient, _options, _logger);
+            CustomFields = new CustomFieldsClient(_httpClient, _options, _logger);
+            CustomForms = new CustomFormsClient(_httpClient, _options, _logger);
+            Notes = new NotesClient(_httpClient, _options, _logger);
+            Users = new UsersClient(_httpClient, _options, _logger);
+        }
+
+        private HttpClient CreateHttpClient()
+        {
+            var httpClient = new HttpClient();
+            ConfigureHttpClient(httpClient);
+            return httpClient;
+        }
+
+        private void ConfigureHttpClient(HttpClient httpClient)
+        {
+            // Set base URL
+            httpClient.BaseAddress = new Uri(_options.BaseUrl);
+
+            // Set timeout
+            httpClient.Timeout = TimeSpan.FromSeconds(_options.TimeoutSeconds);
+
+            // Set authentication header
+            if (!string.IsNullOrEmpty(_credentials.AccessToken))
+            {
+                httpClient.DefaultRequestHeaders.Authorization = 
+                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _credentials.AccessToken);
+            }
+
+            // Set default headers
+            httpClient.DefaultRequestHeaders.Add("User-Agent", "LawMatics-SDK/1.0.0");
+            httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+
+            // Add custom headers
+            foreach (var header in _options.CustomHeaders)
+            {
+                httpClient.DefaultRequestHeaders.Add(header.Key, header.Value);
+            }
+
+            _logger?.LogDebug("HttpClient configured with base URL: {BaseUrl}", _options.BaseUrl);
+        }
+
+        /// <summary>
+        /// Authenticate using OAuth 2.0 flow
+        /// </summary>
+        /// <param name="clientId">OAuth client ID</param>
+        /// <param name="clientSecret">OAuth client secret</param>
+        /// <param name="authorizationCode">Authorization code</param>
+        /// <param name="redirectUri">Redirect URI (optional)</param>
+        /// <returns>Authentication result</returns>
+        public async Task<OAuthTokenResponse> AuthenticateAsync(string clientId, string clientSecret, string authorizationCode, string? redirectUri = null)
+        {
+            _logger?.LogInformation("Starting OAuth authentication");
+
+            var tokenRequest = new Dictionary<string, string>
+            {
+                { "grant_type", "authorization_code" },
+                { "client_id", clientId },
+                { "client_secret", clientSecret },
+                { "code", authorizationCode }
+            };
+
+            if (!string.IsNullOrEmpty(redirectUri))
+            {
+                tokenRequest.Add("redirect_uri", redirectUri);
+            }
+
+            var content = new FormUrlEncodedContent(tokenRequest);
+            var response = await _httpClient.PostAsync("/oauth/token", content);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                throw new LawMaticsAuthenticationException($"Authentication failed: {errorContent}");
+            }
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var tokenResponse = System.Text.Json.JsonSerializer.Deserialize<OAuthTokenResponse>(responseContent);
+
+            if (tokenResponse != null)
+            {
+                // Update credentials with new token
+                _credentials.UpdateTokens(tokenResponse);
+                
+                // Update HttpClient header
+                _httpClient.DefaultRequestHeaders.Authorization = 
+                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenResponse.AccessToken);
+
+                _logger?.LogInformation("Authentication successful");
+            }
+
+            return tokenResponse ?? throw new LawMaticsException("Failed to parse authentication response");
+        }
+
+        /// <summary>
+        /// Refresh the access token
+        /// </summary>
+        /// <returns>New token response</returns>
+        public async Task<OAuthTokenResponse> RefreshTokenAsync()
+        {
+            if (string.IsNullOrEmpty(_credentials.RefreshToken))
+            {
+                throw new LawMaticsAuthenticationException("No refresh token available");
+            }
+
+            _logger?.LogInformation("Refreshing access token");
+
+            var tokenRequest = new Dictionary<string, string>
+            {
+                { "grant_type", "refresh_token" },
+                { "refresh_token", _credentials.RefreshToken }
+            };
+
+            if (!string.IsNullOrEmpty(_credentials.ClientId))
+            {
+                tokenRequest.Add("client_id", _credentials.ClientId);
+                tokenRequest.Add("client_secret", _credentials.ClientSecret ?? "");
+            }
+
+            var content = new FormUrlEncodedContent(tokenRequest);
+            var response = await _httpClient.PostAsync("/oauth/token", content);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                throw new LawMaticsAuthenticationException($"Token refresh failed: {errorContent}");
+            }
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var tokenResponse = System.Text.Json.JsonSerializer.Deserialize<OAuthTokenResponse>(responseContent);
+
+            if (tokenResponse != null)
+            {
+                // Update credentials with new token
+                _credentials.UpdateTokens(tokenResponse);
+                
+                // Update HttpClient header
+                _httpClient.DefaultRequestHeaders.Authorization = 
+                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenResponse.AccessToken);
+
+                _logger?.LogInformation("Token refreshed successfully");
+            }
+
+            return tokenResponse ?? throw new LawMaticsException("Failed to parse token refresh response");
+        }
+
+        /// <summary>
+        /// Test the connection to the API
+        /// </summary>
+        /// <returns>True if connection is successful</returns>
+        public async Task<bool> TestConnectionAsync()
+        {
+            try
+            {
+                _logger?.LogDebug("Testing API connection");
+
+                // Try to get current user as a simple connection test
+                var response = await _httpClient.GetAsync("/users/me");
+                
+                if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized && 
+                    !string.IsNullOrEmpty(_credentials.RefreshToken))
+                {
+                    // Try to refresh token and retry
+                    await RefreshTokenAsync();
+                    response = await _httpClient.GetAsync("/users/me");
+                }
+
+                var success = response.IsSuccessStatusCode;
+                _logger?.LogDebug("Connection test result: {Success}", success);
+                
+                return success;
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Connection test failed");
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Get API version information
+        /// </summary>
+        /// <returns>API version information</returns>
+        public async Task<object> GetApiVersionAsync()
+        {
+            var response = await _httpClient.GetAsync("/version");
+            response.EnsureSuccessStatusCode();
+            
+            var content = await response.Content.ReadAsStringAsync();
+            return System.Text.Json.JsonSerializer.Deserialize<object>(content) ?? new { };
+        }
+
+        /// <summary>
+        /// Get account information
+        /// </summary>
+        /// <returns>Account information</returns>
+        public async Task<object> GetAccountInfoAsync()
+        {
+            var response = await _httpClient.GetAsync("/account");
+            response.EnsureSuccessStatusCode();
+            
+            var content = await response.Content.ReadAsStringAsync();
+            return System.Text.Json.JsonSerializer.Deserialize<object>(content) ?? new { };
+        }
+
+        /// <summary>
+        /// Dispose of the client
+        /// </summary>
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed && disposing)
+            {
+                _httpClient?.Dispose();
+                _disposed = true;
+                _logger?.LogDebug("LawMaticsClient disposed");
+            }
+        }
+    }
+}

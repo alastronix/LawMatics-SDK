@@ -1,0 +1,11 @@
+        public async Task<TaskItem?> CreateTaskAsync(CreateTaskRequest request, CancellationToken cancellationToken = default)
+        {
+            return await PostAsync<TaskItem>("tasks", request, cancellationToken);
+        }
+
+        /// <summary>
+        /// Updates an existing task.
+        /// </summary>
+        /// <param name="id">The task ID.</param>
+        /// <param name="request">The task update request.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>

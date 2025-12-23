@@ -1,0 +1,6 @@
+        public async Task<PagedResponse<CustomContactType>> GetActiveCustomContactTypesAsync(
+            int page = 1,
+            int pageSize = 20,
+            CancellationToken cancellationToken = default)
+        {
+            return await GetCustomContactTypesAsync(page, pageSize, isActive: true, cancellationToken: cancellationToken);

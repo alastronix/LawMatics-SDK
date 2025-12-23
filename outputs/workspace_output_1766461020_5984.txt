@@ -1,0 +1,21 @@
+                ContactId = 1
+            };
+
+            var expectedResponse = new TaskItem
+            {
+                Id = 2,
+                Title = request.Title,
+                Description = request.Description,
+                DueDate = request.DueDate,
+                Priority = request.Priority,
+                StatusId = request.StatusId,
+                AssignedToId = request.AssignedToId,
+                MatterId = request.MatterId,
+                ContactId = request.ContactId,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+            var response = new HttpResponseMessage(HttpStatusCode.Created)
+            {
+                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")

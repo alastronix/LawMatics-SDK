@@ -1,0 +1,11 @@
+23-    {
+24-        private readonly Mock<HttpMessageHandler> _mockHttpMessageHandler;
+25-        private readonly Mock<ILogger<TaskStatusesClient>> _mockLogger;
+26-        private readonly LawMaticsClientOptions _options;
+27-        private readonly LawMaticsCredentials _credentials;
+28:        private readonly HttpClient _httpClient;
+29-
+30-        public TaskStatusesClientTests()
+31-        {
+32-            _mockHttpMessageHandler = new Mock<HttpMessageHandler>();
+33-            _mockLogger = new Mock<ILogger<TaskStatusesClient>>();

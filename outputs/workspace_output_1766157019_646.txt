@@ -1,0 +1,50 @@
+
+        /// <summary>
+        /// Gets or sets the number of items per page.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public int? PerPage { get; set; }
+
+        /// <summary>
+        /// Gets or sets the field to sort by.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? SortBy { get; set; }
+
+        /// <summary>
+        /// Gets or sets the sort direction (asc or desc).
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? SortDirection { get; set; }
+
+        /// <summary>
+        /// Gets or sets the fields to include in the response.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string[]? Include { get; set; }
+
+        /// <summary>
+        /// Gets or sets the fields to exclude from the response.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string[]? Exclude { get; set; }
+    }
+
+    /// <summary>
+    /// Represents filter parameters for API queries.
+    /// </summary>
+    public class FilterParameters : BaseRequestParameters
+    {
+        /// <summary>
+        /// Gets or sets the search term to filter results.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? Search { get; set; }
+
+        /// <summary>
+        /// Gets or sets additional filter criteria.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public Dictionary<string, object>? Filters { get; set; }
+    }
+}

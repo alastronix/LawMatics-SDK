@@ -1,0 +1,12 @@
+/workspace/LawMatics.SDK/bin/Debug/net9.0/LawMatics.SDK.deps.json
+/workspace/LawMatics.SDK/bin/Debug/net9.0/LawMatics.SDK.dll
+/workspace/LawMatics.SDK/bin/Debug/net9.0/LawMatics.SDK.pdb
+/workspace/LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.csproj.AssemblyReference.cache
+/workspace/LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.AssemblyInfoInputs.cache
+/workspace/LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.AssemblyInfo.cs
+/workspace/LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.csproj.CoreCompileInputs.cache
+/workspace/LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.dll
+/workspace/LawMatics.SDK/obj/Debug/net9.0/refint/LawMatics.SDK.dll
+/workspace/LawMatics.SDK/obj/Debug/net9.0/LawMatics.SDK.pdb
+/workspace/LawMatics.SDK/obj/Debug/net9.0/ref/LawMatics.SDK.dll

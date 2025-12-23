@@ -1,0 +1,17 @@
+[xUnit.net 00:00:00.29]     LawMatics.SDK.Tests.TimeEntriesClientTests.CreateTimeEntryAsync_WithValidRequest_ReturnsCreatedTimeEntry [FAIL]
+[xUnit.net 00:00:00.30]       Assert.NotNull() Failure: Value is null
+[xUnit.net 00:00:00.30]       Stack Trace:
+[xUnit.net 00:00:00.30]         /workspace/LawMatics.SDK.Tests/TimeEntriesClientTests.cs(217,0): at LawMatics.SDK.Tests.TimeEntriesClientTests.CreateTimeEntryAsync_WithValidRequest_ReturnsCreatedTimeEntry()
+--
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.TimeEntriesClientTests.CreateTimeEntryAsync_WithValidRequest_ReturnsCreatedTimeEntry() in /workspace/LawMatics.SDK.Tests/TimeEntriesClientTests.cs:line 217
+--
+     1>Done Building Project "/workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj" (VSTest target(s)) -- FAILED.
+
+Build FAILED.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.76

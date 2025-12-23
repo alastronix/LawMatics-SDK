@@ -1,0 +1,23 @@
+        protected async Task DeleteAsync(string endpoint)
+        {
+            await SendRequestAsync<object>(HttpMethod.Delete, endpoint);
+        }
+
+        protected async Task<T?> GetAsync<T>(string endpoint, Dictionary<string, string> parameters, CancellationToken cancellationToken = default)
+        {
+            var queryString = string.Join("&", parameters.Select(kvp => $"{Uri.EscapeDataString(kvp.Key)}={Uri.EscapeDataString(kvp.Value)}"));
+            var fullEndpoint = $"{endpoint}?{queryString}";
+            var response = await GetAsync<T>(fullEndpoint);
+            return response.Data;
+--
+        protected async Task<bool> DeleteAsync(string endpoint, CancellationToken cancellationToken = default)
+        {
+            await DeleteAsync(endpoint);
+            return true;
+        }
+
+        protected async Task<byte[]> GetFileAsync(string endpoint, Dictionary<string, string>? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var fullEndpoint = endpoint;
+            if (parameters != null && parameters.Count > 0)
+            {

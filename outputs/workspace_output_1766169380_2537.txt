@@ -1,0 +1,10 @@
+            var response = await GetAsync<List<Contact>>($"/contacts?{queryParams}");
+            return response;
+        }
+
+        /// <summary>
+        /// Get a specific contact by ID
+--
+            var response = await GetAsync<Contact>($"/contacts/{id}");
+            return response.Data;
+        }

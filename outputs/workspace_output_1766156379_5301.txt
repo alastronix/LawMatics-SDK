@@ -1,0 +1,5 @@
+./LawMatics.SDK/Clients/CompaniesClient.cs:using LawMatics.SDK.Models;
+./LawMatics.SDK/Clients/EmailCampaignsClient.cs:using LawMatics.SDK.Models;
+./LawMatics.SDK/Clients/PaymentsClient.cs:using LawMatics.SDK.Models;
+./LawMatics.SDK/Clients/UsersClient.cs:using LawMatics.SDK.Models;
+./LawMatics.SDK/Clients/EventsClient.cs:using LawMatics.SDK.Models;

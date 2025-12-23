@@ -1,0 +1,16 @@
+        public async Task GetCommentAsync_WithValidId_ReturnsComment()
+        {
+            // Arrange
+            var expectedComment = new Comment
+            {
+                Id = 1,
+                EntityType = "contact",
+                EntityId = 123,
+                Content = "Test comment",
+                CreatedById = 456,
+                CreatedByName = "Test User",
+                CreatedAt = DateTime.UtcNow,
+                IsInternal = false,
+                IsDeleted = false
+            };
+

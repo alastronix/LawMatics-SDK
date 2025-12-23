@@ -1,0 +1,33 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+/workspace/LawMatics.SDK/Clients/EmailAddressesClient.cs(289,18): error CS0101: The namespace 'LawMatics.SDK.Clients' already contains a definition for 'EmailValidationResult' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(27,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(59,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(70,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(82,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(105,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(120,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(135,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(151,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(229,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(301,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(312,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+
+Build FAILED.
+
+/workspace/LawMatics.SDK/Clients/EmailAddressesClient.cs(289,18): error CS0101: The namespace 'LawMatics.SDK.Clients' already contains a definition for 'EmailValidationResult' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(27,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(59,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(70,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(82,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(105,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(120,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(135,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(151,41): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(229,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(301,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/Clients/TaskStatusesClient.cs(312,27): error CS0104: 'TaskStatus' is an ambiguous reference between 'LawMatics.SDK.Models.TaskStatus' and 'System.Threading.Tasks.TaskStatus' [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+    0 Warning(s)
+    12 Error(s)
+
+Time Elapsed 00:00:03.11

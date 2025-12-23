@@ -1,0 +1,26 @@
+108-            Assert.Equal(1, result.Data[0].Id);
+109-            Assert.Equal("Main Conference Room", result.Data[0].Name);
+110-        }
+111-
+112-        [Fact]
+113:        public async Task GetEventLocationAsync_WithValidId_ReturnsEventLocation()
+114-        {
+115-            // Arrange
+116-            var client = new EventLocationsClient(_httpClient, _options, _mockLogger.Object);
+117-            var expectedResponse = new EventLocation
+118-            {
+119-                Id = 1,
+120-                Name = "Main Conference Room",
+121-                Address = "123 Main St, Suite 100",
+122-                Capacity = 50,
+123-                Description = "Large conference room with AV equipment",
+124-                CreatedAt = DateTime.UtcNow
+125-            ,
+126-                        UpdatedAt = DateTime.UtcNow};
+127-
+128-            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+129-            var response = new HttpResponseMessage(HttpStatusCode.OK)
+130-            {
+131-                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")
+132-            };
+133-

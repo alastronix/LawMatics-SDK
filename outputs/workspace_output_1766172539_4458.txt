@@ -1,0 +1,11 @@
+    public class CreateCommentRequest
+    {
+        [JsonPropertyName("entity_type")]
+        public string EntityType { get; set; } = string.Empty;
+
+        [JsonPropertyName("entity_id")]
+        public int EntityId { get; set; }
+
+        [JsonPropertyName("comment")]
+        public string Comment { get; set; } = string.Empty;
+

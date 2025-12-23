@@ -1,0 +1,1 @@
+275:        public async Task<T> DeleteAsync<T>(string endpoint, CancellationToken cancellationToken = default)

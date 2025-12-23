@@ -1,0 +1,2 @@
+327:            await PostAsync("/files/bulk-delete", new { file_ids = fileIds });
+337:            await PostAsync("/files/bulk-move", new { file_ids = fileIds, folder_id = folderId });

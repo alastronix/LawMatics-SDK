@@ -1,0 +1,43 @@
+            // Initialize all client properties
+            Contacts = new ContactsClient(_httpClient, _options, _logger);
+            Companies = new CompaniesClient(_httpClient, _options, _logger);
+            Matters = new MattersClient(_httpClient, _options, _logger);
+            Events = new EventsClient(_httpClient, _options, _logger);
+            Files = new FilesClient(_httpClient, _options, _logger);
+            Folders = new FoldersClient(_httpClient, _options, _logger);
+            EmailCampaigns = new EmailCampaignsClient(_httpClient, _options, _logger);
+            Payments = new PaymentsClient(_httpClient, _options, _logger);
+            CustomFields = new CustomFieldsClient(_httpClient, _options, _logger);
+            CustomForms = new CustomFormsClient(_httpClient, _options, _logger);
+            Notes = new NotesClient(_httpClient, _options, _logger);
+            Users = new UsersClient(_httpClient, _options, _logger);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the LawmaticsClient class with API key authentication
+        /// </summary>
+        /// <param name="apiKey">API key for authentication</param>
+        /// <param name="options">Client configuration options</param>
+        /// <param name="logger">Optional logger</param>
+--
+            // Initialize all client properties
+            Contacts = new ContactsClient(_httpClient, _options, _logger);
+            Companies = new CompaniesClient(_httpClient, _options, _logger);
+            Matters = new MattersClient(_httpClient, _options, _logger);
+            Events = new EventsClient(_httpClient, _options, _logger);
+            Files = new FilesClient(_httpClient, _options, _logger);
+            Folders = new FoldersClient(_httpClient, _options, _logger);
+            EmailCampaigns = new EmailCampaignsClient(_httpClient, _options, _logger);
+            Payments = new PaymentsClient(_httpClient, _options, _logger);
+            CustomFields = new CustomFieldsClient(_httpClient, _options, _logger);
+            CustomForms = new CustomFormsClient(_httpClient, _options, _logger);
+            Notes = new NotesClient(_httpClient, _options, _logger);
+            Users = new UsersClient(_httpClient, _options, _logger);
+            Addresses = new AddressesClient(_httpClient, _options, _logger);
+            Tasks = new TasksClient(_httpClient, _options, _logger);
+            Expenses = new ExpensesClient(_httpClient, _options, _logger);
+            TimeEntries = new TimeEntriesClient(_httpClient, _options, _logger);
+            CustomEmails = new CustomEmailsClient(_httpClient, _options, _logger);
+            EmailAddresses = new EmailAddressesClient(_httpClient, _options, _logger);
+            EventLocations = new EventLocationsClient(_httpClient, _options, _logger);
+            EventTypes = new EventTypesClient(_httpClient, _options, _logger);

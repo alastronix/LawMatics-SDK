@@ -1,0 +1,10 @@
+-rw-r--r-- 1 root root   4955 Dec 19 21:01 workspace_output_1766178093_5702.txt
+-rw-r--r-- 1 root root     98 Dec 19 21:01 workspace_output_1766178113_579.txt
+-rw-r--r-- 1 root root      0 Dec 19 21:01 workspace_output_1766178115_5527.txt
+-rw-r--r-- 1 root root 105934 Dec 19 14:53 workspace_output_C#_SDK_BUILD_ERRORS_7005.txt
+-rw-r--r-- 1 root root 139881 Dec 19 21:01 workspace_output_LAWMATICS_SDK_BUILD_5919.txt
+-rw-r--r-- 1 root root 228728 Dec 19 15:34 workspace_output_LAWMATICS_SDK_BUILD_ERRORS_2310.txt
+-rw-r--r-- 1 root root 129696 Dec 19 21:01 workspace_output_LAWMATICS_SDK_TEST_FAILURES_332.txt
+-rw-r--r-- 1 root root 112099 Dec 19 18:33 workspace_output_LOGGER_TYPE_MISMATCH_ERRORS_6001.txt
+-rw-r--r-- 1 root root 250609 Dec 19 15:33 workspace_output_SDK_BUILD_ERRORS_3710.txt
+-rw-r--r-- 1 root root 243567 Dec 19 20:54 workspace_output_SDK_BUILD_ERRORS_FIX_5982.txt

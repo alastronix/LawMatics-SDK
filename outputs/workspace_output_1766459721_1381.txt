@@ -1,0 +1,20 @@
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.TimeEntriesClientTests.UpdateTimeEntryAsync_WithValidIdAndRequest_ReturnsUpdatedTimeEntry() in /workspace/LawMatics.SDK.Tests/TimeEntriesClientTests.cs:line 264
+--
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.EventLocationsClientTests.GetEventLocationAsync_WithValidId_ReturnsEventLocation() in /workspace/LawMatics.SDK.Tests/EventLocationsClientTests.cs:line 149
+--
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.TasksClientTests.CreateTaskAsync_WithValidRequest_ReturnsCreatedTask() in /workspace/LawMatics.SDK.Tests/TasksClientTests.cs:line 213
+--
+  Error Message:
+   Assert.NotNull() Failure: Value is null
+  Stack Trace:
+     at LawMatics.SDK.Tests.EmailAddressesClientTests.GetEmailAddressAsync_WithValidId_ReturnsEmailAddress() in /workspace/LawMatics.SDK.Tests/EmailAddressesClientTests.cs:line 147
+--

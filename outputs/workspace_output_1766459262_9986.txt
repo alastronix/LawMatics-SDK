@@ -1,0 +1,87 @@
+65:                    new TimeEntry
+66-                    {
+67-                        Id = 1,
+68-                        Description = "Client consultation call",
+69-                        Hours = 1.5m,
+70-                        Rate = 250.00m,
+71-                        Total = 375.00m,
+72-                        Date = DateTime.UtcNow,
+73-                        MatterId = 1,
+74-                        UserId = 1,
+75-                        CreatedAt = DateTime.UtcNow
+76-                    }
+77-                },
+78-                Pagination = new PaginationInfo
+79-                {
+80-                    CurrentPage = 1,
+81-                    PerPage = 20,
+82-                    Total = 1
+83-                }
+84-            };
+85-
+--
+119:            var expectedResponse = new TimeEntry
+120-            {
+121-                Id = 1,
+122-                Description = "Client consultation call",
+123-                Hours = 1.5m,
+124-                Rate = 250.00m,
+125-                Total = 375.00m,
+126-                Date = DateTime.UtcNow,
+127-                MatterId = 1,
+128-                UserId = 1,
+129-                CreatedAt = DateTime.UtcNow
+130-            };
+131-
+132-            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+133-            var response = new HttpResponseMessage(HttpStatusCode.OK)
+134-            {
+135-                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")
+136-            };
+137-
+138-            _mockHttpMessageHandler
+139-                .Protected()
+--
+174:            var expectedResponse = new TimeEntry
+175-            {
+176-                Id = 2,
+177-                Description = request.Description,
+178-                Hours = request.Hours,
+179-                Rate = request.Rate,
+180-                Total = request.Hours * request.Rate,
+181-                Date = request.Date,
+182-                MatterId = request.MatterId,
+183-                UserId = request.UserId,
+184-                CreatedAt = DateTime.UtcNow
+185-            };
+186-
+187-            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+188-            var response = new HttpResponseMessage(HttpStatusCode.Created)
+189-            {
+190-                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")
+191-            };
+192-
+193-            _mockHttpMessageHandler
+194-                .Protected()
+--
+226:            var expectedResponse = new TimeEntry
+227-            {
+228-                Id = 1,
+229-                Description = request.Description,
+230-                Hours = request.Hours ?? 0m,
+231-                Rate = request.Rate ?? 0m,
+232-                Total = (request.Hours ?? 0m) * (request.Rate ?? 0m),
+233-                Date = DateTime.UtcNow.AddDays(-1),
+234-                MatterId = 1,
+235-                UserId = 1,
+236-                CreatedAt = DateTime.UtcNow.AddDays(-1),
+237-                UpdatedAt = DateTime.UtcNow
+238-            };
+239-
+240-            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+241-            var response = new HttpResponseMessage(HttpStatusCode.OK)
+242-            {
+243-                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")
+244-            };
+245-
+246-            _mockHttpMessageHandler

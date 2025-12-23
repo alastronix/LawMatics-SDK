@@ -1,0 +1,21 @@
+    public class PagedResponse<T>
+    {
+        /// <summary>
+        /// Gets or sets the collection of items returned by the API.
+        /// </summary>
+        [JsonPropertyName("data")]
+        public List<T>? Data { get; set; }
+
+        /// <summary>
+        /// Gets or sets pagination information.
+        /// </summary>
+        [JsonPropertyName("pagination")]
+        public PaginationInfo? Pagination { get; set; }
+
+        /// <summary>
+        /// Gets or sets the correlation ID for tracking the request.
+        /// </summary>
+        [JsonPropertyName("correlation_id")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? CorrelationId { get; set; }
+

@@ -1,0 +1,9 @@
+The template "xUnit Test Project" was created successfully.
+
+Processing post-creation actions...
+Restoring /workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj:
+  Determining projects to restore...
+  Restored /workspace/LawMatics.SDK.Tests/LawMatics.SDK.Tests.csproj (in 2.4 sec).
+Restore succeeded.
+
+

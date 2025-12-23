@@ -1,0 +1,28 @@
+35:        protected async Task<ApiResponse<T>> GetAsync<T>(string endpoint)
+36-        {
+37-            return await SendRequestAsync<T>(HttpMethod.Get, endpoint);
+38-        }
+39-
+40-        protected async Task<ApiResponse<T>> PostAsync<T>(string endpoint, object? data = null)
+--
+55:        protected async Task<T?> GetAsync<T>(string endpoint, Dictionary<string, string> parameters, CancellationToken cancellationToken = default)
+56-        {
+57-            var queryString = string.Join("&", parameters.Select(kvp => $"{Uri.EscapeDataString(kvp.Key)}={Uri.EscapeDataString(kvp.Value)}"));
+58-            var fullEndpoint = $"{endpoint}?{queryString}";
+59:            var response = await GetAsync<T>(fullEndpoint);
+60-            return response.Data;
+61-        }
+62-
+63:        protected async Task<T?> GetAsync<T>(string endpoint, CancellationToken cancellationToken = default)
+64-        {
+65-            var response = await SendRequestAsync<T>(HttpMethod.Get, endpoint);
+66-            return response.Data;
+67-        }
+68-
+--
+102:            var response = await _httpClient.GetAsync(fullEndpoint, cancellationToken);
+103-            response.EnsureSuccessStatusCode();
+104-            return await response.Content.ReadAsByteArrayAsync(cancellationToken);
+105-        }
+106-
+107-        protected async Task<ApiResponse<T>> SendRequestAsync<T>(HttpMethod method, string endpoint, object? data = null)

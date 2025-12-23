@@ -1,0 +1,30 @@
+Checking TaskStatusesClientTests.cs...
+  Found unfixed serialization at line 134
+  -> Skipping - this is a PagedResponse (already fixed)
+Checking EventTypesClientTests.cs...
+  Found unfixed serialization at line 132
+  -> Skipping - this is a PagedResponse (already fixed)
+Checking MatterSubStatusesClientTests.cs...
+  Found unfixed serialization at line 130
+  -> Skipping - this is a PagedResponse (already fixed)
+Checking SubtasksClientTests.cs...
+  Found unfixed serialization at line 132
+  -> Skipping - this is a PagedResponse (already fixed)
+Checking ExpensesClientTests.cs...
+  Found unfixed serialization at line 132
+  -> Skipping - this is a PagedResponse (already fixed)
+Checking TasksClientTests.cs...
+  Found unfixed serialization at line 138
+  -> Skipping - this is a PagedResponse (already fixed)
+  Found unfixed serialization at line 196
+  -> Skipping - this is a PagedResponse (already fixed)
+  Found unfixed serialization at line 249
+  -> Skipping - this is a PagedResponse (already fixed)
+Checking TimeEntriesClientTests.cs...
+  Found unfixed serialization at line 196
+  -> Skipping - this is a PagedResponse (already fixed)
+  Found unfixed serialization at line 249
+  -> Skipping - this is a PagedResponse (already fixed)
+
+=== Summary ===
+Total single object fixes applied: 0

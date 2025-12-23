@@ -1,0 +1,47 @@
+58-        {
+59-            // Arrange
+60:            var client = new EventLocationsClient(_httpClient, _options, _mockLogger.Object);
+61-            var expectedResponse = new PagedResponse<EventLocation>
+62-            {
+63-                Data = new List<EventLocation>
+64-                {
+65:                    new EventLocation
+66-                    {
+67-                        Id = 1,
+68-                        Name = "Main Conference Room",
+69-                        Address = "123 Main St, Suite 100",
+70-                        Capacity = 50,
+71-                        Description = "Large conference room with AV equipment",
+72-                        CreatedAt = DateTime.UtcNow
+73-                    ,
+74-                        UpdatedAt = DateTime.UtcNow}
+75-                },
+--
+114-        {
+115-            // Arrange
+116:            var client = new EventLocationsClient(_httpClient, _options, _mockLogger.Object);
+117:            var expectedResponse = new EventLocation
+118-            {
+119-                Id = 1,
+120-                Name = "Main Conference Room",
+121-                Address = "123 Main St, Suite 100",
+122-                Capacity = 50,
+123-                Description = "Large conference room with AV equipment",
+124-                CreatedAt = DateTime.UtcNow,
+125-                UpdatedAt = DateTime.UtcNow
+126-            };
+127-
+--
+157-        {
+158-            // Arrange
+159:            var client = new EventLocationsClient(_httpClient, _options, _mockLogger.Object);
+160-            var response = new HttpResponseMessage(HttpStatusCode.NoContent);
+161-
+162-            _mockHttpMessageHandler
+163-                .Protected()
+164-                .Setup<Task<HttpResponseMessage>>(
+165-                    "SendAsync",
+166-                    ItExpr.Is<HttpRequestMessage>(req => 
+167-                        req.Method == HttpMethod.Delete && 
+168-                        req.RequestUri != null &&
+169-                        req.RequestUri.ToString().Contains("event-locations/1")),

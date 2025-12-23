@@ -1,0 +1,133 @@
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of comments</returns>
+        public async Task<PagedResponse<Comment>> GetCommentsAsync(FilterParameters? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var queryParams = BuildQueryString(parameters ?? new FilterParameters());
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryParams}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Gets a specific comment by ID
+        /// </summary>
+        /// <param name="id">Comment ID</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>Comment details</returns>
+        public async Task<Comment?> GetCommentAsync(int id, CancellationToken cancellationToken = default)
+        {
+            var response = await GetAsync<ApiResponse<Comment>>($"comments/{id}", cancellationToken: cancellationToken);
+            return response.Data;
+        }
+
+        /// <summary>
+        /// Creates a new comment
+        /// </summary>
+        /// <param name="request">Comment creation request</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>Created comment</returns>
+--
+            var queryParams = parameters ?? new GetCommentsParameters();
+            queryParams.EntityType = entityType;
+            queryParams.EntityId = entityId;
+            
+            var queryString = BuildQueryString(queryParams);
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryString}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Gets comments created by a specific user
+        /// </summary>
+        /// <param name="createdById">User ID who created the comments</param>
+        /// <param name="parameters">Optional filter parameters</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of comments created by the user</returns>
+        public async Task<PagedResponse<Comment>> GetCommentsByUserAsync(int createdById, GetCommentsParameters? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var queryParams = parameters ?? new GetCommentsParameters();
+            queryParams.CreatedById = createdById;
+            
+            var queryString = BuildQueryString(queryParams);
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryString}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Gets comments created within a date range
+        /// </summary>
+        /// <param name="startDate">Start date</param>
+        /// <param name="endDate">End date</param>
+        /// <param name="parameters">Optional filter parameters</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of comments created within the date range</returns>
+        public async Task<PagedResponse<Comment>> GetCommentsByDateRangeAsync(DateTime startDate, DateTime endDate, GetCommentsParameters? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var queryParams = parameters ?? new GetCommentsParameters();
+            queryParams.StartDate = startDate;
+            queryParams.EndDate = endDate;
+            
+            var queryString = BuildQueryString(queryParams);
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryString}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Gets internal comments
+        /// </summary>
+        /// <param name="parameters">Optional filter parameters</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of internal comments</returns>
+        public async Task<PagedResponse<Comment>> GetInternalCommentsAsync(GetCommentsParameters? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var queryParams = parameters ?? new GetCommentsParameters();
+            queryParams.IsInternal = true;
+            
+            var queryString = BuildQueryString(queryParams);
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryString}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Gets public comments
+        /// </summary>
+        /// <param name="parameters">Optional filter parameters</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of public comments</returns>
+        public async Task<PagedResponse<Comment>> GetPublicCommentsAsync(GetCommentsParameters? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var queryParams = parameters ?? new GetCommentsParameters();
+            queryParams.IsInternal = false;
+            
+            var queryString = BuildQueryString(queryParams);
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryString}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Searches comments by content
+        /// </summary>
+        /// <param name="searchText">Text to search for in comment content</param>
+        /// <param name="parameters">Optional filter parameters</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of comments matching the search text</returns>
+        public async Task<PagedResponse<Comment>> SearchCommentsAsync(string searchText, GetCommentsParameters? parameters = null, CancellationToken cancellationToken = default)
+        {
+            var queryParams = parameters ?? new GetCommentsParameters();
+            queryParams.Search = searchText;
+            
+            var queryString = BuildQueryString(queryParams);
+            return await GetAsync<PagedResponse<Comment>>($"comments?{queryString}", cancellationToken);
+        }
+
+        /// <summary>
+        /// Bulk creates multiple comments
+        /// </summary>
+        /// <param name="requests">List of comment creation requests</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>List of created comments</returns>
+        public async Task<List<Comment>> BulkCreateCommentsAsync(List<CreateCommentRequest> requests, CancellationToken cancellationToken = default)
+        {
+            var response = await PostAsync<ApiResponse<List<Comment>>>("comments/bulk", new { comments = requests }, cancellationToken);
+            return response.Data ?? new List<Comment>();
+        }
+
+        /// <summary>
+        /// Bulk deletes multiple comments
+        /// </summary>
+        /// <param name="commentIds">List of comment IDs to delete</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        /// <returns>True if successful</returns>

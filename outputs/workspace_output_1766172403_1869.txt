@@ -1,0 +1,17 @@
+total 348
+drwxr-xr-x  8 user user   4096 Dec 19 19:10 .
+drwxr-xr-x 20 root root   4096 Dec 15 10:10 ..
+-rw-r--r--  1 root root   5021 Dec 19 18:10 API-Endpoints-Analysis.md
+-rw-r--r--  1 root root   7895 Dec 19 15:36 LawMatics-SDK-Example.cs
+drwxr-xr-x  9 root root   4096 Dec 19 15:10 LawMatics.SDK
+-rw-r--r--  1 root root 242448 Dec 19 19:10 LawMatics.SDK.1.0.0.nupkg
+drwxr-xr-x  6 root root   4096 Dec 19 19:18 LawMatics.SDK.Tests
+-rw-r--r--  1 root root   2850 Dec 19 06:13 LawMatics.SDK.sln
+-rw-r--r--  1 root root  15748 Dec 19 18:50 README.md
+drwxr-xr-x  3 root root   4096 Dec 19 18:47 bin
+drwxr-xr-x  3 root root   4096 Dec 19 18:47 obj
+drwxr-xr-x  2 root root  20480 Dec 19 19:26 outputs
+drwxr-xr-x  2 root root  12288 Dec 19 19:09 summarized_conversations
+-rw-r--r--  1 root root   5997 Dec 19 19:12 todo.md
+-rw-r--r--  1 root root   3844 Dec 19 18:47 verify-api-coverage.cs
+-rw-r--r--  1 root root    236 Dec 19 18:47 verify-api-coverage.csproj

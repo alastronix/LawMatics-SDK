@@ -1,0 +1,9 @@
+The template "Console App" was created successfully.
+
+Processing post-creation actions...
+Restoring /workspace/DebugTest/DebugTest.csproj:
+  Determining projects to restore...
+  Restored /workspace/DebugTest/DebugTest.csproj (in 110 ms).
+Restore succeeded.
+
+

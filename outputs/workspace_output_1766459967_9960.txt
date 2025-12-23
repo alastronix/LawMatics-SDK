@@ -1,0 +1,35 @@
+123:            var expectedTimeEntry = new TimeEntry
+124-            {
+125-                Id = 1,
+126-                Description = "Client consultation call",
+127-                Hours = 1.5m,
+128-                Rate = 250.00m,
+129-                Total = 375.00m,
+130-                Date = DateTime.UtcNow,
+131-                MatterId = 1,
+132-                UserId = 1,
+133-                CreatedAt = DateTime.UtcNow,
+134-                UpdatedAt = DateTime.UtcNow
+135-            };
+136-
+137:            var apiResponse = new ApiResponse<TimeEntry> { Data = expectedTimeEntry };
+138-            };
+139-
+140-            var jsonResponse = JsonSerializer.Serialize(expectedResponse, _jsonOptions);
+141-            var response = new HttpResponseMessage(HttpStatusCode.OK)
+142-            {
+143-                Content = new StringContent(jsonResponse, System.Text.Encoding.UTF8, "application/json")
+144-            };
+145-
+146-            _mockHttpMessageHandler
+147-                .Protected()
+148-                .Setup<Task<HttpResponseMessage>>(
+149-                    "SendAsync",
+150-                    ItExpr.Is<HttpRequestMessage>(req => 
+151-                        req.Method == HttpMethod.Get && 
+152-                        req.RequestUri != null &&
+153-                        req.RequestUri.ToString().Contains("time-entries/1")),
+154-                    ItExpr.IsAny<CancellationToken>())
+155-                .ReturnsAsync(response);
+156-
+157-            // Act

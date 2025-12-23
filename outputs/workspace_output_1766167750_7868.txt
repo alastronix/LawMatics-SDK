@@ -1,0 +1,533 @@
+using System.Text.Json.Serialization;
+
+namespace LawMatics.SDK.Models
+{
+    /// <summary>
+    /// Represents a file in Lawmatics
+    /// </summary>
+    public class LawMaticsFile
+    {
+        /// <summary>
+        /// Unique identifier for the file
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// File name
+        /// </summary>
+        [JsonPropertyName("name")]
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// File description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// File type
+        /// </summary>
+        [JsonPropertyName("type")]
+        public string? Type { get; set; }
+
+        /// <summary>
+        /// File size in bytes
+        /// </summary>
+        [JsonPropertyName("size")]
+        public long Size { get; set; }
+
+        /// <summary>
+        /// File URL
+        /// </summary>
+        [JsonPropertyName("url")]
+        public string? Url { get; set; }
+
+        /// <summary>
+        /// Download URL
+        /// </summary>
+        [JsonPropertyName("download_url")]
+        public string? DownloadUrl { get; set; }
+
+        /// <summary>
+        /// Date when file was created
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date when file was last updated
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    /// <summary>
+    /// Request model for updating a file
+    /// </summary>
+    public class UpdateFileRequest
+    {
+        /// <summary>
+        /// File name
+        /// </summary>
+        [JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// File description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// File type
+        /// </summary>
+        [JsonPropertyName("type")]
+        public string? Type { get; set; }
+    }
+
+    /// <summary>
+    /// Represents a custom contact type
+    /// </summary>
+    public class CustomContactType
+    {
+        /// <summary>
+        /// Unique identifier for the custom contact type
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Custom contact type name
+        /// </summary>
+        [JsonPropertyName("name")]
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Custom contact type description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Date when custom contact type was created
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date when custom contact type was last updated
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    /// <summary>
+    /// Represents an email campaign creation request
+    /// </summary>
+    public class CreateCampaignRequest
+    {
+        /// <summary>
+        /// Campaign name
+        /// </summary>
+        [JsonPropertyName("name")]
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Campaign subject
+        /// </summary>
+        [JsonPropertyName("subject")]
+        public string Subject { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Campaign content
+        /// </summary>
+        [JsonPropertyName("content")]
+        public string Content { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Campaign type
+        /// </summary>
+        [JsonPropertyName("type")]
+        public string? Type { get; set; }
+
+        /// <summary>
+        /// Campaign status
+        /// </summary>
+        [JsonPropertyName("status")]
+        public string? Status { get; set; }
+    }
+
+    /// <summary>
+    /// Represents email campaign statistics
+    /// </summary>
+    public class EmailCampaignStats
+    {
+        /// <summary>
+        /// Total emails sent
+        /// </summary>
+        [JsonPropertyName("sent")]
+        public int Sent { get; set; }
+
+        /// <summary>
+        /// Total emails delivered
+        /// </summary>
+        [JsonPropertyName("delivered")]
+        public int Delivered { get; set; }
+
+        /// <summary>
+        /// Total opens
+        /// </summary>
+        [JsonPropertyName("opens")]
+        public int Opens { get; set; }
+
+        /// <summary>
+        /// Total clicks
+        /// </summary>
+        [JsonPropertyName("clicks")]
+        public int Clicks { get; set; }
+
+        /// <summary>
+        /// Total bounces
+        /// </summary>
+        [JsonPropertyName("bounces")]
+        public int Bounces { get; set; }
+
+        /// <summary>
+        /// Open rate percentage
+        /// </summary>
+        [JsonPropertyName("open_rate")]
+        public decimal OpenRate { get; set; }
+
+        /// <summary>
+        /// Click rate percentage
+        /// </summary>
+        [JsonPropertyName("click_rate")]
+        public decimal ClickRate { get; set; }
+    }
+
+    /// <summary>
+    /// Represents an event location
+    /// </summary>
+    public class EventLocation
+    {
+        /// <summary>
+        /// Unique identifier for the event location
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Location name
+        /// </summary>
+        [JsonPropertyName("name")]
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Location address
+        /// </summary>
+        [JsonPropertyName("address")]
+        public string? Address { get; set; }
+
+        /// <summary>
+        /// Location capacity
+        /// </summary>
+        [JsonPropertyName("capacity")]
+        public int? Capacity { get; set; }
+
+        /// <summary>
+        /// Location description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Date when location was created
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date when location was last updated
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    /// <summary>
+    /// Represents an event type
+    /// </summary>
+    public class EventType
+    {
+        /// <summary>
+        /// Unique identifier for the event type
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Event type name
+        /// </summary>
+        [JsonPropertyName("name")]
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Event type description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Event type color
+        /// </summary>
+        [JsonPropertyName("color")]
+        public string? Color { get; set; }
+
+        /// <summary>
+        /// Default duration in minutes
+        /// </summary>
+        [JsonPropertyName("default_duration")]
+        public int? DefaultDuration { get; set; }
+
+        /// <summary>
+        /// Date when event type was created
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date when event type was last updated
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    /// <summary>
+    /// Represents a matter sub-status
+    /// </summary>
+    public class MatterSubStatus
+    {
+        /// <summary>
+        /// Unique identifier for the matter sub-status
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Sub-status name
+        /// </summary>
+        [JsonPropertyName("name")]
+        public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Sub-status description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Parent status ID
+        /// </summary>
+        [JsonPropertyName("parent_status_id")]
+        public int? ParentStatusId { get; set; }
+
+        /// <summary>
+        /// Date when sub-status was created
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date when sub-status was last updated
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    /// <summary>
+    /// Represents a payment creation request
+    /// </summary>
+    public class CreatePaymentRequest
+    {
+        /// <summary>
+        /// Payment amount
+        /// </summary>
+        [JsonPropertyName("amount")]
+        public decimal Amount { get; set; }
+
+        /// <summary>
+        /// Payment description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Payment method
+        /// </summary>
+        [JsonPropertyName("method")]
+        public string? Method { get; set; }
+
+        /// <summary>
+        /// Contact ID
+        /// </summary>
+        [JsonPropertyName("contact_id")]
+        public int? ContactId { get; set; }
+
+        /// <summary>
+        /// Matter ID
+        /// </summary>
+        [JsonPropertyName("matter_id")]
+        public int? MatterId { get; set; }
+    }
+
+    /// <summary>
+    /// Represents a payment update request
+    /// </summary>
+    public class UpdatePaymentRequest
+    {
+        /// <summary>
+        /// Payment amount
+        /// </summary>
+        [JsonPropertyName("amount")]
+        public decimal? Amount { get; set; }
+
+        /// <summary>
+        /// Payment description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Payment method
+        /// </summary>
+        [JsonPropertyName("method")]
+        public string? Method { get; set; }
+
+        /// <summary>
+        /// Payment status
+        /// </summary>
+        [JsonPropertyName("status")]
+        public string? Status { get; set; }
+    }
+
+    /// <summary>
+    /// Represents an expense
+    /// </summary>
+    public class Expense
+    {
+        /// <summary>
+        /// Unique identifier for the expense
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Expense description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string Description { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Expense amount
+        /// </summary>
+        [JsonPropertyName("amount")]
+        public decimal Amount { get; set; }
+
+        /// <summary>
+        /// Expense category
+        /// </summary>
+        [JsonPropertyName("category")]
+        public string? Category { get; set; }
+
+        /// <summary>
+        /// Expense date
+        /// </summary>
+        [JsonPropertyName("date")]
+        public DateTime Date { get; set; }
+
+        /// <summary>
+        /// Matter ID
+        /// </summary>
+        [JsonPropertyName("matter_id")]
+        public int? MatterId { get; set; }
+
+        /// <summary>
+        /// Date when expense was created
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date when expense was last updated
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    /// <summary>
+    /// Represents a time entry
+    /// </summary>
+    public class TimeEntry
+    {
+        /// <summary>
+        /// Unique identifier for the time entry
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Time entry description
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string Description { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Hours worked
+        /// </summary>
+        [JsonPropertyName("hours")]
+        public decimal Hours { get; set; }
+
+        /// <summary>
+        /// Hourly rate
+        /// </summary>
+        [JsonPropertyName("rate")]
+        public decimal Rate { get; set; }
+
+        /// <summary>
+        /// Total amount
+        /// </summary>
+        [JsonPropertyName("total")]
+        public decimal Total { get; set; }
+
+        /// <summary>
+        /// Time entry date
+        /// </summary>
+        [JsonPropertyName("date")]
+        public DateTime Date { get; set; }
+
+        /// <summary>
+        /// Matter ID
+        /// </summary>
+        [JsonPropertyName("matter_id")]
+        public int? MatterId { get; set; }
+
+        /// <summary>
+        /// User ID
+        /// </summary>
+        [JsonPropertyName("user_id")]
+        public int? UserId { get; set; }
+
+        /// <summary>
+        /// Date when time entry was created
+        /// </summary>
+        [JsonPropertyName("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date when time entry was last updated
+        /// </summary>
+        [JsonPropertyName("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+    }
+
+    }

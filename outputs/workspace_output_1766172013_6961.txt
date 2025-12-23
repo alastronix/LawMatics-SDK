@@ -1,0 +1,11 @@
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs:    public class ApiResponse<T>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-    {
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// <summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// Gets or sets the response data.
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// </summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        [JsonPropertyName("data")]
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        public T? Data { get; set; }
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// <summary>
+/workspace/LawMatics.SDK/Models/ApiErrorResponse.cs-        /// Gets or sets pagination information, if applicable.

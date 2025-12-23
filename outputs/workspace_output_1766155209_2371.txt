@@ -1,0 +1,17 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+/workspace/LawMatics.SDK/LawMaticsClient.cs(315,67): error CS0103: The name 'GetFullUrl' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/LawMaticsClient.cs(320,26): error CS0103: The name 'ExecuteRequestAsync' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/LawMaticsClient.cs(332,66): error CS0103: The name 'GetFullUrl' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/LawMaticsClient.cs(333,34): error CS0103: The name 'ExecuteRequestAsync' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+
+Build FAILED.
+
+/workspace/LawMatics.SDK/LawMaticsClient.cs(315,67): error CS0103: The name 'GetFullUrl' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/LawMaticsClient.cs(320,26): error CS0103: The name 'ExecuteRequestAsync' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/LawMaticsClient.cs(332,66): error CS0103: The name 'GetFullUrl' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+/workspace/LawMatics.SDK/LawMaticsClient.cs(333,34): error CS0103: The name 'ExecuteRequestAsync' does not exist in the current context [/workspace/LawMatics.SDK/LawMatics.SDK.csproj]
+    0 Warning(s)
+    4 Error(s)
+
+Time Elapsed 00:00:03.82

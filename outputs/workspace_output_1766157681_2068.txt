@@ -1,0 +1,4 @@
+273:            await PostAsync($"/custom-fields/{fieldId}/options/reorder", new { option_ids = optionIds });
+363:            await PostAsync("/custom-fields/bulk-delete", new { field_ids = fieldIds });
+372:            await PostAsync("/custom-fields/bulk-activate", new { field_ids = fieldIds });
+381:            await PostAsync("/custom-fields/bulk-deactivate", new { field_ids = fieldIds });

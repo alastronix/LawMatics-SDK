@@ -1,0 +1,11 @@
+    public class CreateTimeEntryRequest
+    {
+        [JsonPropertyName("description")]
+        public string Description { get; set; } = string.Empty;
+
+        [JsonPropertyName("hours")]
+        public decimal Hours { get; set; }
+
+        [JsonPropertyName("rate")]
+        public decimal Rate { get; set; }
+

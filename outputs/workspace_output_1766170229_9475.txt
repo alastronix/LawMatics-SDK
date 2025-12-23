@@ -1,0 +1,5 @@
+total 252
+drwxr-xr-x 3 root root   4096 Dec 19 14:44 .
+drwxr-xr-x 4 root root   4096 Dec 19 14:44 ..
+-rw-r--r-- 1 root root 242447 Dec 19 18:40 LawMatics.SDK.1.0.0.nupkg
+drwxr-xr-x 2 root root   4096 Dec 19 18:40 net9.0

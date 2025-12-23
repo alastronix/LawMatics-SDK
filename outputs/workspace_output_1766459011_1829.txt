@@ -1,0 +1,50 @@
+26:        public async Task<PagedResponse<CustomContactType>> GetCustomContactTypesAsync(
+27-            int page = 1,
+28-            int pageSize = 20,
+29-            string? name = null,
+30-            bool? isActive = null,
+31-            CancellationToken cancellationToken = default)
+32-        {
+33-            var parameters = new Dictionary<string, string>
+34-            {
+35-                ["page"] = page.ToString(),
+36-                ["page_size"] = pageSize.ToString()
+37-            };
+38-
+39-            if (!string.IsNullOrEmpty(name))
+40-                parameters["name"] = name;
+41-
+--
+105:            return await GetCustomContactTypesAsync(page, pageSize, isActive: true, cancellationToken: cancellationToken);
+106-        }
+107-
+108-        /// <summary>
+109-        /// Searches custom contact types by name.
+110-        /// </summary>
+111-        /// <param name="query">Search query.</param>
+112-        /// <param name="page">Page number for pagination (default: 1).</param>
+113-        /// <param name="pageSize">Number of items per page (default: 20).</param>
+114-        /// <param name="cancellationToken">Cancellation token.</param>
+115-        /// <returns>A paged list of custom contact types matching the search query.</returns>
+116-        public async Task<PagedResponse<CustomContactType>> SearchCustomContactTypesAsync(
+117-            string query,
+118-            int page = 1,
+119-            int pageSize = 20,
+120-            CancellationToken cancellationToken = default)
+--
+122:            return await GetCustomContactTypesAsync(page, pageSize, name: query, cancellationToken: cancellationToken);
+123-        }
+124-
+125-        /// <summary>
+126-        /// Gets contacts of a specific custom type.
+127-        /// </summary>
+128-        /// <param name="contactTypeId">The contact type ID.</param>
+129-        /// <param name="page">Page number for pagination (default: 1).</param>
+130-        /// <param name="pageSize">Number of items per page (default: 20).</param>
+131-        /// <param name="cancellationToken">Cancellation token.</param>
+132-        /// <returns>A paged list of contacts of the specified type.</returns>
+133-        public async Task<PagedResponse<Contact>> GetContactsByTypeAsync(
+134-            int contactTypeId,
+135-            int page = 1,
+136-            int pageSize = 20,
+137-            CancellationToken cancellationToken = default)

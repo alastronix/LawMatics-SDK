@@ -1,0 +1,3 @@
+LawMatics.SDK.Tests.csproj
+LawMaticsClientTests.cs
+UnitTest1.cs

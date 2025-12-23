@@ -1,0 +1,16 @@
+            {
+                Data = new List<CustomContactType>
+                {
+                    new CustomContactType
+                    {
+                        Id = 1,
+                        Name = "Active Type",
+                        CreatedAt = DateTime.UtcNow
+                    }
+                },
+                Pagination = new PaginationInfo
+                {
+                    CurrentPage = 1,
+                    PerPage = 20,
+                    Total = 1
+                }

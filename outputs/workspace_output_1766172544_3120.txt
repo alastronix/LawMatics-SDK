@@ -1,0 +1,60 @@
+
+        [JsonPropertyName("updated_at")]
+        public DateTime? UpdatedAt { get; set; }
+
+        [JsonPropertyName("is_internal")]
+        public bool IsInternal { get; set; }
+
+        [JsonPropertyName("is_deleted")]
+        public bool IsDeleted { get; set; }
+    }
+
+    /// <summary>
+    /// Request model for creating a comment
+    /// </summary>
+    public class CreateCommentRequest
+    {
+--
+
+        [JsonPropertyName("comment")]
+        public string Comment { get; set; } = string.Empty;
+
+        [JsonPropertyName("is_internal")]
+        public bool IsInternal { get; set; }
+    }
+
+    /// <summary>
+    /// Request model for updating a comment
+    /// </summary>
+    public class UpdateCommentRequest
+    {
+        [JsonPropertyName("comment")]
+        public string Comment { get; set; } = string.Empty;
+
+        [JsonPropertyName("is_internal")]
+        public bool? IsInternal { get; set; }
+    }
+
+    /// <summary>
+    /// Represents the request parameters for filtering comments.
+    /// </summary>
+    public class GetCommentsParameters : FilterParameters
+    {
+        /// <summary>
+        /// Gets or sets a filter for entity type.
+        /// </summary>
+--
+
+        /// <summary>
+        /// Gets or sets a filter for internal comments (true/false).
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public bool? IsInternal { get; set; }
+
+        /// <summary>
+        /// Gets or sets a filter for search text.
+        /// </summary>
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? Search { get; set; }
+    }
+}

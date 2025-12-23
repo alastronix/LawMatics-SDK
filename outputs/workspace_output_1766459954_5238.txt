@@ -1,0 +1,16 @@
+119:        public async Task GetTimeEntryAsync_WithValidId_ReturnsTimeEntry()
+120-        {
+121-            // Arrange
+122-            var client = new TimeEntriesClient(_httpClient, _options, _mockLogger.Object);
+123-            var expectedResponse = new TimeEntry
+124-            {
+125-                Id = 1,
+126-                Description = "Client consultation call",
+127-                Hours = 1.5m,
+128-                Rate = 250.00m,
+129-                Total = 375.00m,
+130-                Date = DateTime.UtcNow,
+131-                MatterId = 1,
+132-                UserId = 1,
+133-                CreatedAt = DateTime.UtcNow,
+134-                        UpdatedAt = DateTime.UtcNow
