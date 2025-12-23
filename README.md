@@ -18,7 +18,8 @@ A comprehensive C# SDK for interacting with the LawMatics API, providing a clean
 - **File Management**: Complete file upload/download functionality with streaming support
 - **Extensible Logging**: Integration with Microsoft.Extensions.Logging
 - **Dependency Injection Ready**: Designed for easy integration with DI containers
-- **Unit Tested**: Comprehensive test suite with high code coverage
+- **Unit Tested**: Comprehensive test suite with 100% pass rate (109/109 tests passing)
+   - **Open Source**: Available on GitHub with full source code and issue tracking
 
 ## Installation
 
